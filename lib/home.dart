@@ -471,7 +471,7 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-        Container(
+        Container( 
           padding: EdgeInsets.fromLTRB(72, 97, 10, 20),
           child: RaisedButton(
             child: Text("Daha Fazlası"),
