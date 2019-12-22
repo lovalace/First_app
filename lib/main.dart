@@ -7,6 +7,9 @@ import 'package:first_app/aboutus.dart';
 import 'package:first_app/detail.dart';
 import 'package:first_app/products.dart';
 import 'package:first_app/newsfromus.dart';
+import 'package:first_app/bayigirisi.dart';
+import 'package:first_app/kvkk.dart';
+
 // import 'package:carousel_pro/carousel_pro.dart';
 
 void main() {
@@ -19,6 +22,8 @@ void main() {
       "/aboutus": (context) => AboutUs(),
       "/products": (context) => Products(),
       "/newsfromus": (context) => NewsFromUs(),
+      "/bayigirisi": (context) => BayiGirisi(),
+      "/kvkk": (context) => Kvkk(),
     },
   ));
 }
@@ -73,9 +78,15 @@ class NewDrawer extends StatelessWidget {
           },
         ),
         ListTile(
+          title: Text('BAYİ GİRİŞİ'),
+          onTap: () {
+            Navigator.pushNamed(context, "/bayigirisi");
+          },
+        ),
+        ListTile(
           title: Text('KİŞİSEL VERİLERİN KORUNMASI'),
           onTap: () {
-            // Navigator.pop(context);
+            Navigator.pushNamed(context, "/kvkk");
           },
         ),
         ListTile(
