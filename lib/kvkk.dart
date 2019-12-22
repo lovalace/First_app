@@ -49,7 +49,7 @@ class Kvkk extends StatelessWidget {
 _launchURL() async {
   const url = 'https://google.com';
   if (await canLaunch(url)) {
-    print("BAŞARIlı");
+    print("BAŞARIlI");
     await launch(url,forceWebView: true);
 
   } else {
