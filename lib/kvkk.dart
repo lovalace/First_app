@@ -199,7 +199,7 @@ class _MyAppState extends State<Kvkk> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: NewDrawer(),
+        // drawer: NewDrawer(),
         appBar: NewAppBar(),
         backgroundColor: Colors.white,
         body: SafeArea(
@@ -383,9 +383,8 @@ class _PdfViewPageState extends State<PdfViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("My Document"),
-      ),
+      // drawer: NewDrawer(),
+      appBar: NewAppBar(),
       body: Stack(
         children: <Widget>[
           PDFView(
