@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
-// import 'package:flutter_full_pdf_viewer/full_pdf_viewer_plugin.dart';
-// import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
-
 import 'package:first_app/settings.dart';
 import 'package:first_app/home.dart';
 import 'package:first_app/aboutus.dart';
@@ -11,8 +7,10 @@ import 'package:first_app/products.dart';
 import 'package:first_app/newsfromus.dart';
 import 'package:first_app/bayigirisi.dart';
 import 'package:first_app/kvkk.dart';
+import 'package:first_app/kalite.dart';
+import 'package:first_app/iletisim.dart';
+import 'package:first_app/buyukbalya.dart';
 
-// import 'package:carousel_pro/carousel_pro.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -26,6 +24,9 @@ void main() {
       "/newsfromus": (context) => NewsFromUs(),
       "/bayigirisi": (context) => BayiGirisi(),
       "/kvkk": (context) => Kvkk(),
+      "/kalite": (context) => Kalite(),
+      "/iletisim": (context) => Iletisim(),
+      "/buyukbalya": (context) => BuyukBalya(),
     },
   ));
 }
@@ -94,13 +95,13 @@ class NewDrawer extends StatelessWidget {
         ListTile(
           title: Text('KALİTE POLİTİKAMIZ'),
           onTap: () {
-            Navigator.pushNamed(context, "/detail");
+            Navigator.pushNamed(context, "/kalite");
           },
         ),
         ListTile(
           title: Text('İLETİŞİM'),
           onTap: () {
-            // Navigator.pop(context);
+            Navigator.pushNamed(context, "/iletisim");
           },
         ),
       ],

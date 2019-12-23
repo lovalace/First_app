@@ -36,7 +36,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");              
+              Navigator.pushNamed(context, "/buyukbalya");              
             },
             child: Image.asset(
               'images/Orkinos.jpg',

@@ -11,6 +11,8 @@ class NewsFromUs extends StatelessWidget {
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textBizdenHaberler(),
                 _stackBolum1(context),
@@ -29,17 +31,17 @@ class NewsFromUs extends StatelessWidget {
 
   Container _textBizdenHaberler() {
     return Container(
-                //Burası hoşuma gitmedi incelemek lazım.68 olarak değil otomatik olarak getirtmek lazım
-                padding: EdgeInsets.symmetric(horizontal: 68, vertical: 20),
-                color: Colors.grey[300],
-                child: Text(
-                  'BİZDEN HABERLER',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 32,
-                  ),
-                ),
-              );
+      padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
+      color: Colors.grey[300],
+      child: Text(
+        'BİZDEN HABERLER',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 32,
+        ),
+      ),
+    );
   }
 
   Stack _stackBolum1(BuildContext context) {

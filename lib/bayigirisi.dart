@@ -11,6 +11,8 @@ class BayiGirisi extends StatelessWidget {
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textBayiGirisi(),
                 Container(
@@ -35,7 +37,6 @@ class BayiGirisi extends StatelessWidget {
                     },
                   ),
                 ),
-                
               ],
             ),
           ),
@@ -46,11 +47,12 @@ class BayiGirisi extends StatelessWidget {
 
   Container _textBayiGirisi() {
     return Container(
-      //Burası hoşuma gitmedi incelemek lazım.124 olarak değil otomatik olarak getirtmek lazım
-      padding: EdgeInsets.symmetric(horizontal: 124, vertical: 20),
+
+      padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
       color: Colors.grey[300],
       child: Text(
         'BAYİ GİRİŞİ',
+        textAlign: TextAlign.center,
         style: TextStyle(
           color: Colors.black,
           fontSize: 32,
