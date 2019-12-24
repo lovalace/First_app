@@ -11,9 +11,7 @@ class Iletisim extends StatelessWidget {
       body: Scrollbar(
         child: SingleChildScrollView(
           child: Column(
-            children: <Widget>[
-
-            ],
+            children: <Widget>[],
           ),
         ),
       ),
