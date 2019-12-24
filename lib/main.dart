@@ -12,6 +12,7 @@ import 'package:first_app/iletisim.dart';
 import 'package:first_app/buyukbalya.dart';
 
 
+
 void main() {
   runApp(MaterialApp(
     initialRoute: "/",
