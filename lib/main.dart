@@ -52,10 +52,11 @@ class NewDrawer extends StatelessWidget {
   }
 }
 
-Widget _listTile(BuildContext context, String _text, String _url) => ListTile(
-      title: Text(_text),
+Widget _listTile(BuildContext context, String text, String url) => ListTile(
+      title: Text(text),
       onTap: () {
-        Navigator.pushNamed(context, _url);
+        Navigator.pop(context);
+        Navigator.pushNamed(context, url);
       },
     );
 

@@ -9,19 +9,11 @@ class Iletisim extends StatelessWidget {
       drawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
-      body: GMaps(),
-      //  Scrollbar(
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       children: <Widget>[
-              
-      //         Container(
-      //           child: Image.asset('images/FSon.jpg'),
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
+      body: Column(children: <Widget>[
+        Container(child:GMaps(),height: 200),
+        Text('Bizi Takip Edin'),
+
+      ] ),
     );
   }
 }
@@ -44,18 +36,11 @@ class _MyAppState extends State<GMaps> {
   @override
   Widget build(BuildContext context) {
     return
-    //  MaterialApp(
-    //   home: Scaffold(
-    //     appBar: AppBar(
-    //       title: Text('Maps Sample App'),
-    //       backgroundColor: Colors.green[700],
-    //     ),
-    //     body: 
-        GoogleMap(
+        GoogleMap(mapToolbarEnabled: true,
           onMapCreated: _onMapCreated,
           initialCameraPosition: CameraPosition(
             target: _center,
-            zoom: 20.0,
+            zoom: 15.0,
           ),
         );
       

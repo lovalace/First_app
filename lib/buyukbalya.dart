@@ -18,7 +18,6 @@ class BuyukBalya extends StatelessWidget {
               _headerText("Büyük Balya Makinaları"),
               _urunlerWidget(context, "/buyukbalya","images/Orkinos.jpg", "Orkinos 1270", "Büyük Balya Makinaları"),
               _urunlerWidget(context, "/buyukbalya","images/Orkinos870X-1.jpg", "Orkinos 870", "Büyük Balya Makinaları"),
-              _urunlerWidget(context, "/buyukbalya","images/Orkinos870X-1.jpg", "Orkinos 888", "Deneme"),
               _imageAsset('images/FSon.jpg'),
             ],
           ),

@@ -7,8 +7,7 @@ import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 Container _textKVKK() {
   return Container(
-    //Burası hoşuma gitmedi incelemek lazım.10 olarak değil otomatik olarak getirtmek lazım
-    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+    // padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
     color: Colors.grey[300],
     child: Text(
       'KİŞİSEL VERİLERİN KORUNMASI',
@@ -19,14 +18,27 @@ Container _textKVKK() {
     ),
   );
 }
-// }
 
-class Kvkk extends StatefulWidget {
+class Kvkk extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        // drawer: NewDrawer(),
+        appBar: NewAppBar(),
+        backgroundColor: Colors.white,
+        body: KvkkMain(),
+      ),
+    );
+  }
+}
+
+class KvkkMain extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<Kvkk> {
+class _MyAppState extends State<KvkkMain> {
   String assetPDFPath1 = "";
   String assetPDFPath2 = "";
   String assetPDFPath3 = "";
@@ -196,168 +208,160 @@ class _MyAppState extends State<Kvkk> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        // drawer: NewDrawer(),
-        appBar: NewAppBar(),
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: Scrollbar(
-            child: SingleChildScrollView(
-              child: Builder(
-                builder: (context) => Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    _textKVKK(),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KİŞİSEL VERİLERİN İŞLENMESİ VE KORUNMASI POLİTİKASI",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath1 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath1)));
-                        }
-                      },
+    return SafeArea(
+      child: Scrollbar(
+        child: SingleChildScrollView(
+          child: Builder(
+            builder: (context) => Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                _textKVKK(),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KİŞİSEL VERİLERİN İŞLENMESİ VE KORUNMASI POLİTİKASI",
                     ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK TEDARİKÇİ&TAŞERON ÇALIŞANI AYDINLATMA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath2 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath2)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK TEDARİKÇİ AYDINLATMA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath3 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath3)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK RIZA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath4 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath4)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK PERSONEL AYDINLATMA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath5 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath5)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK MÜŞTERİ AYDINLATMA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath6 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath6)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK İŞ BAŞVURUSU ADAY PERSONEL AYDINLATMA METNİ",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath7 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath7)));
-                        }
-                      },
-                    ),
-                    RaisedButton(
-                      color: Colors.grey,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "PAKSAN KVKK VERİ SAHİBİ BAŞVURU FORMU",
-                        ),
-                      ),
-                      onPressed: () {
-                        if (assetPDFPath8 != null) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      PdfViewPage(path: assetPDFPath8)));
-                        }
-                      },
-                    ),
-                  ],
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath1 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath1)));
+                    }
+                  },
                 ),
-              ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK TEDARİKÇİ&TAŞERON ÇALIŞANI AYDINLATMA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath2 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath2)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK TEDARİKÇİ AYDINLATMA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath3 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath3)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK RIZA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath4 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath4)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK PERSONEL AYDINLATMA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath5 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath5)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK MÜŞTERİ AYDINLATMA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath6 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath6)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK İŞ BAŞVURUSU ADAY PERSONEL AYDINLATMA METNİ",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath7 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath7)));
+                    }
+                  },
+                ),
+                RaisedButton(
+                  color: Colors.grey,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "PAKSAN KVKK VERİ SAHİBİ BAŞVURU FORMU",
+                    ),
+                  ),
+                  onPressed: () {
+                    if (assetPDFPath8 != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PdfViewPage(path: assetPDFPath8)));
+                    }
+                  },
+                ),
+              ],
             ),
           ),
         ),
