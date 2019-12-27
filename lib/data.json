@@ -1,0 +1,13 @@
+{
+    "headerText": "Büyük Balya Makinaları X",
+    "url": "/buyukbalya",
+    "imageUrl": "images/Orkinos.jpg",
+    "ProductName": null,
+    "categoryName": "Büyük Balya Makinaları X",
+    "subProduct": [
+      { "imageUrl": "images/Orkinos.jpg",
+      "ProductName": "Orkinos 1270 X" },
+       { "imageUrl": "images/Orkinos870X-1.jpg",
+      "ProductName": "Orkinos 870 X" }
+    ]
+  }

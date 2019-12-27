@@ -1,11 +1,58 @@
 //import 'dart:js';
 
+import 'dart:convert';
+
+import 'package:first_app/data.dart';
+import 'package:first_app/productlist.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
+import 'package:first_app/utility.dart' as utility;
 
 class BuyukBalya extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Scaffold(
+  return _scaffold(context, _products, 0); //0 büyük balya
+  }
+}
+
+class KucukBalya extends StatelessWidget {
+  Widget build(BuildContext context) {
+  return _scaffold(context, _products, 1); // 1 küçük balya
+  }
+}
+
+class YatayYemKarmma extends StatelessWidget {
+  Widget build(BuildContext context) {
+  return _scaffold(context, _products, 2); // 2 yatay yem karma
+  }
+}
+
+class DikeyYemKarma extends StatelessWidget {
+  Widget build(BuildContext context) {
+  return _scaffold(context, _products, 3); //3 dikey yem karma
+  }
+}
+
+class Silaj extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return _scaffold(context, _products, 4); //4 silaj
+  }
+}
+ var decode = jsonDecode(allProducts);
+ var _products = ProductList.fromJson(decode);
+
+class CayirBicme extends StatelessWidget {
+  Widget build(BuildContext context) {
+     return _scaffold(context, _products, 5); //5 çayır biçme
+  }
+}
+
+class OtToplama extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return _scaffold(context, _products, 6); //6 ot toplama
+  }
+}
+
+Widget _scaffold( BuildContext context, ProductList _products, int _itemindex ) =>Scaffold(
       drawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
@@ -15,61 +62,20 @@ class BuyukBalya extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              _headerText("Büyük Balya Makinaları"),
-              _urunlerWidget(context, "/buyukbalya","images/Orkinos.jpg", "Orkinos 1270", "Büyük Balya Makinaları"),
-              _urunlerWidget(context, "/buyukbalya","images/Orkinos870X-1.jpg", "Orkinos 870", "Büyük Balya Makinaları"),
-              _imageAsset('images/FSon.jpg'),
+            getWidgets(context, _products, _itemindex)
             ],
           ),
         ),
       ),
     );
+
+   Widget getWidgets(BuildContext context,ProductList _products, int _itemindex)
+  {
+    List<Widget> list = new List<Widget>();
+    list.add(utility.HeaderText(_products.product[_itemindex].headerText));
+    for(var item in _products.product[_itemindex].subProduct){ 
+       list.add(utility.UrunlerWidget(context,  _products.product[_itemindex].url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
+    }
+    list.add(utility.ImageAsset('images/FSon.jpg'));
+    return new Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
   }
-}
-
-Widget _urunlerWidget(BuildContext context,String _url , String _imageUrl, String _productName ,String _catagoryName )=> Stack(children: <Widget>[
-      _mainContainer(context, _url,_imageUrl),
-      _container(_productName, _textStyle14, _edgeInsets332),
-      _container(_catagoryName, _textStyle14, _edgeInsets362)
-],);
-
-
-Widget _headerText(String text) => Container(
-  padding: _edgeInsetsSymmetric,
-  color: Colors.grey[300],
-  child: Text(text, textAlign: TextAlign.center,style: _textstyle26),
-);
-
-Widget _mainContainer( BuildContext context, String _url , String _imageUrl) => Stack(
- children: <Widget>[
-      Container(
-         padding: EdgeInsets.fromLTRB(10, 22, 10, 00),
-     child: _flatButton(context,_url,_imageUrl ),
-      ),
-     ]
-);
-Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
-    Container(
-      padding: _edgeInsets,
-      child: Text(text, style: _textStyle),
-      alignment: Alignment.center,
-    );
-
-Widget _imageAsset( String _url  ) => Image.asset( _url, scale: 3,);
-Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
-          onPressed: () {
-            Navigator.pushNamed(context, _url);
-          }, 
-           child: _imageAsset(_imageUrl)
-          );
-final _textStyle14 = TextStyle(
-  fontSize: 14,
-  color: Colors.blue[700],);
-
-final _textstyle26 = TextStyle(
-        color: Colors.black87,
-        fontSize: 26,);
-
-final _edgeInsets332 = EdgeInsets.fromLTRB(10, 332, 10, 00);
-final _edgeInsets362 = EdgeInsets.fromLTRB(10, 362, 10, 00);
-final _edgeInsetsSymmetric = EdgeInsets.symmetric(horizontal: 0, vertical: 20);
