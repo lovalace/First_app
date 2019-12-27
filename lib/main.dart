@@ -14,6 +14,7 @@ import 'package:first_app/buyukbalya.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: "/",
     routes: {
       "/": (context) => Home(),
@@ -27,6 +28,12 @@ void main() {
       "/kalite": (context) => Kalite(),
       "/iletisim": (context) => Iletisim(),
       "/buyukbalya": (context) => BuyukBalya(),
+      "/kucukbalya": (context) => KucukBalya(),
+      "/yatayyemkarma": (context) => YatayYemKarmma(),
+      "/dikeyyemkarma": (context) => DikeyYemKarma(),
+      "/silaj": (context) => Silaj(),
+      "/cayirbicme": (context) => CayirBicme(),
+      "/ottoplama": (context) => OtToplama(),
     },
   ));
 }

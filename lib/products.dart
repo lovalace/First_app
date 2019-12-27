@@ -67,7 +67,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/products");
+                Navigator.pushNamed(context, "/ottoplama");
               },
               child: Image.asset('images/KirlangicKapak.jpg', scale: 3)),
         ),
@@ -94,7 +94,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");
+              Navigator.pushNamed(context, "/silaj");
             },
             child: Image.asset('images/ScorpionX.jpg', scale: 3),
           ),
@@ -122,7 +122,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");
+              Navigator.pushNamed(context, "/cayirbicme");
             },
             child: Image.asset('images/cayirbicme.jpg', scale: 3),
           ),
@@ -150,7 +150,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");
+              Navigator.pushNamed(context, "/yatayyemkarma");
             },
             child: Image.asset('images/yatayyem.jpg', scale: 3),
           ),
@@ -158,7 +158,7 @@ class Products extends StatelessWidget {
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
           child: Text(
-            'YATAY YEM KIRMA MAKİNALARI',
+            'YATAY YEM KARMA',
             style: TextStyle(
               fontSize: 16,
               color: Colors.blue[900],
@@ -178,7 +178,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");
+              Navigator.pushNamed(context, "/dikeyyemkarma");
             },
             child: Image.asset('images/Diamond3X-1.jpg', scale: 3),
           ),
@@ -186,7 +186,7 @@ class Products extends StatelessWidget {
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
           child: Text(
-            'DİKEY YEM KIRMA MAKİNALARI',
+            'DİKEY YEM KARMA',
             style: TextStyle(
               fontSize: 16,
               color: Colors.blue[900],
@@ -206,7 +206,7 @@ class Products extends StatelessWidget {
           // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, "/products");
+              Navigator.pushNamed(context, "/kucukbalya");
             },
             child: Image.asset('images/Yabali.jpg', scale: 3),
           ),
