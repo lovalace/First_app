@@ -7,7 +7,7 @@ import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 Container _textKVKK() {
   return Container(
-    // padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+    padding: EdgeInsets.symmetric(vertical: 20),
     color: Colors.grey[300],
     child: Text(
       'KİŞİSEL VERİLERİN KORUNMASI',
