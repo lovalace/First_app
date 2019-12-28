@@ -72,10 +72,10 @@ Widget _scaffold( BuildContext context, ProductList _products, int _itemindex ) 
    Widget getWidgets(BuildContext context,ProductList _products, int _itemindex)
   {
     List<Widget> list = new List<Widget>();
-    list.add(utility.HeaderText(_products.product[_itemindex].headerText));
+    list.add(utility.headerText(_products.product[_itemindex].headerText));
     for(var item in _products.product[_itemindex].subProduct){ 
-       list.add(utility.UrunlerWidget(context,  _products.product[_itemindex].url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
+       list.add(utility.urunlerWidget(context,  _products.product[_itemindex].url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
     }
-    list.add(utility.ImageAsset('images/FSon.jpg'));
+    list.add(utility.imageAsset('images/FSon.jpg'));
     return new Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
   }
