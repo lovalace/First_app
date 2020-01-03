@@ -17,6 +17,7 @@ dependencies:
   path_provider: ^1.5.1
   google_maps_flutter: ^0.5.21+15
   json_serializable: ^3.2.5
+  font_awesome_flutter: ^8.5.0
 
 dev_dependencies:
   flutter_test:

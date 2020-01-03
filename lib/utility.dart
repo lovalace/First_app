@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 //import 'package:first_app/main.dart';
 
 //global olmalı
-Widget UrunlerWidget(BuildContext context,String _url , String _imageUrl, String _productName ,String _catagoryName )=> Stack(children: <Widget>[
+Widget urunlerWidget(BuildContext context,String _url , String _imageUrl, String _productName ,String _catagoryName )=> Stack(children: <Widget>[
       _mainContainer(context, _url,_imageUrl),
       _container(_productName, _textStyle14, _edgeInsets332),
       _container(_catagoryName, _textStyle14, _edgeInsets362)
 ],);
 
 
-Widget HeaderText(String text) => Container(
+Widget headerText(String text) => Container(
   padding: _edgeInsetsSymmetric,
   color: Colors.grey[300],
   child: Text(text, textAlign: TextAlign.center,style: _textstyle26),
@@ -30,12 +30,12 @@ Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
       alignment: Alignment.center,
     );
 
-Widget ImageAsset( String _url  ) => Image.asset( _url, scale: 3,);
+Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3,);
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
             Navigator.pushNamed(context, _url);
           }, 
-           child: ImageAsset(_imageUrl)
+           child: imageAsset(_imageUrl)
           );
 final _textStyle14 = TextStyle(
   fontSize: 14,
