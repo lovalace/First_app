@@ -71,21 +71,15 @@ Widget _scaffold( BuildContext context, ProductList _products, int _itemindex ) 
 
    Widget getWidgets(BuildContext context,ProductList _products, int _itemindex)
   {
-<<<<<<< HEAD
-    // List<Widget> list = List<Widget>();
-    List<Widget> list ;
-=======
+
     List<Widget> list = new List<Widget>();
->>>>>>> 83010043e2581ec3a839e9f402814e4c7d8fd6f1
+
     list.add(utility.headerText(_products.product[_itemindex].headerText));
     for(var item in _products.product[_itemindex].subProduct){ 
        list.add(utility.urunlerWidget(context,  _products.product[_itemindex].url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
     }
     list.add(utility.imageAsset('images/FSon.jpg'));
-<<<<<<< HEAD
-    return  Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
-  }
-=======
+
     return new Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
+
   }
->>>>>>> 83010043e2581ec3a839e9f402814e4c7d8fd6f1
