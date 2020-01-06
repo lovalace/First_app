@@ -4,7 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'constants.dart';
 
+ 
 Container _textKVKK() {
   return Container(
     padding: EdgeInsets.symmetric(vertical: 20),
@@ -22,7 +24,6 @@ Container _textKVKK() {
 class Kvkk extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      // debugShowCheckedModeBanner: false,
       home: Scaffold(
         // drawer: NewDrawer(),
         appBar: NewAppBar(),
@@ -38,172 +39,68 @@ class KvkkMain extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
+
 class _MyAppState extends State<KvkkMain> {
-  String assetPDFPath1 = "";
-  String assetPDFPath2 = "";
-  String assetPDFPath3 = "";
-  String assetPDFPath4 = "";
-  String assetPDFPath5 = "";
-  String assetPDFPath6 = "";
-  String assetPDFPath7 = "";
-  String assetPDFPath8 = "";
 
   @override
   void initState() {
     super.initState();
-
-    getFileFromAsset1("images/kvkk1.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk1)
+        .getFileFromAsset(kPdfAssetKvkk1)
+        .then((f) {
       setState(() {
         assetPDFPath1 = f.path;
       });
     });
-    getFileFromAsset2("images/kvkk2.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk2)
+        .getFileFromAsset(kPdfAssetKvkk2)
+        .then((f) {
       setState(() {
         assetPDFPath2 = f.path;
       });
     });
-    getFileFromAsset3("images/kvkk3.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk3)
+        .getFileFromAsset(kPdfAssetKvkk3)
+        .then((f) {
       setState(() {
         assetPDFPath3 = f.path;
       });
     });
-    getFileFromAsset4("images/kvkk4.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk4)
+        .getFileFromAsset(kPdfAssetKvkk4)
+        .then((f) {
       setState(() {
         assetPDFPath4 = f.path;
       });
     });
-    getFileFromAsset5("images/kvkk5.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk5)
+        .getFileFromAsset(kPdfAssetKvkk5)
+        .then((f) {
       setState(() {
         assetPDFPath5 = f.path;
       });
     });
-    getFileFromAsset6("images/kvkk6.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk6)
+        .getFileFromAsset(kPdfAssetKvkk6)
+        .then((f) {
       setState(() {
         assetPDFPath6 = f.path;
       });
     });
-    getFileFromAsset7("images/kvkk7.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk7)
+        .getFileFromAsset(kPdfAssetKvkk7)
+        .then((f) {
       setState(() {
         assetPDFPath7 = f.path;
       });
     });
-    getFileFromAsset8("images/kvkk8.pdf").then((f) {
+    GetFilesFromAssets(pdfname: kPdfKvkk8)
+        .getFileFromAsset(kPdfAssetKvkk8)
+        .then((f) {
       setState(() {
         assetPDFPath8 = f.path;
       });
     });
-  }
-
-  Future<File> getFileFromAsset1(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk1.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset2(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk2.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset3(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk3.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset4(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk4.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset5(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk5.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset6(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk6.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset7(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk7.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
-  }
-
-  Future<File> getFileFromAsset8(String asset) async {
-    try {
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/kvkk8.pdf");
-
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
-    } catch (e) {
-      throw Exception("Error opening asset file");
-    }
   }
 
   @override
@@ -450,3 +347,25 @@ class _PdfViewPageState extends State<PdfViewPage> {
     );
   }
 }
+
+class GetFilesFromAssets {
+  final String pdfname;
+
+  GetFilesFromAssets({@required this.pdfname});
+
+  Future<File> getFileFromAsset(String asset) async {
+    try {
+      var data = await rootBundle.load(asset);
+      var bytes = data.buffer.asUint8List();
+      var dir = await getApplicationDocumentsDirectory();
+      File file = File("${dir.path}/$pdfname");
+
+      File assetFile = await file.writeAsBytes(bytes);
+      return assetFile;
+    } catch (e) {
+      throw Exception("Error opening asset file");
+    }
+  }
+}
+
+

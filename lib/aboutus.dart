@@ -55,7 +55,6 @@ class AboutUs extends StatelessWidget {
   }
 }
 
-//25.12.2019
 Widget _container( String text , TextStyle _textStyle ) => Container(
       padding: EdgeInsets.fromLTRB(10, 30, 10, 00),
       child: Text( text,

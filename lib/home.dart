@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-
+import 'constants.dart';
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var paksanMotto =
-        'Paksan her geçen gün ürün yelpazesini geliştirmeye devam ediyor.Prizmatik balya makinası üretiminin yanı sıra, rulo balya makinaları, yatay ve dikey yem karma makinaları,kendi yürür ve sıra bağımsız silaj makinaları, toprak işleme makinaları ve silaj paketleme makinaları üretimlerini gerçekleştiriyor.';
     return Scaffold(
       drawer: NewDrawer(),
       appBar: NewAppBar(),
@@ -15,25 +13,30 @@ class Home extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              buildStackAnaSayfa1(context),
-              Container(
-                padding: EdgeInsets.fromLTRB(00, 30, 00, 00),
-                child: Text(
-                  'Paksan\'ı Keşfedin!',
-                  style: TextStyle(
-                    
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue[900],                    
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  anaSayfaKayanResimler1(context),
+                  Container(
+                    child: Text(
+                      kTextPaksaniKesfet,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue[900],
+                      ),
+                    ),
                   ),
-                ),
+                  Divider(),
+                  anaSayfaKayanResimler2(context),
+                ],
               ),
-              Divider(),          
-              anaSayfaKayanResimler(),
               Divider(),
               Container(
                 child: Text(
-                  'Paksan Makina',
+                  kTextPaksanMakina,
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -43,7 +46,7 @@ class Home extends StatelessWidget {
               ),
               Container(
                 child: Text(
-                  paksanMotto,
+                  kTextpaksanMotto,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,
@@ -53,12 +56,12 @@ class Home extends StatelessWidget {
               ),
               Container(
                 child: Image(
-                  image: AssetImage('images/Ciftlik.png'),
+                  image: AssetImage(kAssetCiftlik),
                 ),
               ),
               Container(
                 child: Text(
-                  'Verimli Üretim',
+                  kTextVerimliUretim,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 22,
@@ -201,7 +204,6 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-              
               Container(
                 child: Text(
                   'Sorunsuz, dayanıklı, güçlü ve geniş',
@@ -222,20 +224,18 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-             
               Divider(),
               Container(
                 padding: EdgeInsets.fromLTRB(00, 10, 00, 00),
                 alignment: Alignment.centerLeft,
                 child: Text(
                   //serüveni bolt olsun
-                  '  Paksan’ın Serüveni', 
+                  '  Paksan’ın Serüveni',
                   // textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Raleway',
                     fontSize: 32,
                     color: Colors.blue[900],
-                    
                   ),
                 ),
               ),
@@ -250,7 +250,12 @@ class Home extends StatelessWidget {
                       color: Colors.orange[900],
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: '1970', style: TextStyle(fontWeight: FontWeight.bold,),),
+                      TextSpan(
+                        text: '1970',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text: ', Paksan Makina’nın Kuruluşu.',
                           style: TextStyle(color: Colors.black54)),
@@ -268,7 +273,12 @@ class Home extends StatelessWidget {
                       color: Colors.orange[900],
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: '1990', style: TextStyle(fontWeight: FontWeight.bold,),),
+                      TextSpan(
+                        text: '1990',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text: ', İlk Balya Makinasının Üretilmesi.',
                           style: TextStyle(color: Colors.black54)),
@@ -286,7 +296,12 @@ class Home extends StatelessWidget {
                       color: Colors.orange[900],
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: '2000', style: TextStyle(fontWeight: FontWeight.bold,),),
+                      TextSpan(
+                        text: '2000',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text:
                               ', Paksan Makina Olarak İlk İhracatımızı Gerçekleştirdik.',
@@ -305,7 +320,12 @@ class Home extends StatelessWidget {
                       color: Colors.orange[900],
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: '2010', style: TextStyle(fontWeight: FontWeight.bold,),),
+                      TextSpan(
+                        text: '2010',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text: ', Yılında Yeni Üretim Tesisimizi Yaptık.',
                           style: TextStyle(color: Colors.black54)),
@@ -323,7 +343,12 @@ class Home extends StatelessWidget {
                       color: Colors.orange[900],
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: '2019', style: TextStyle(fontWeight: FontWeight.bold,),),
+                      TextSpan(
+                        text: '2019',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text:
                               ', Yılında da Organize Üretim Tesisimizi Tamamladık.',
@@ -356,7 +381,6 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-              
               Container(
                 alignment: Alignment.center,
                 child: Text(
@@ -396,13 +420,11 @@ class Home extends StatelessWidget {
     );
   }
 
-
-
-  SizedBox anaSayfaKayanResimler() {
+  SizedBox anaSayfaKayanResimler2(context) {
     return SizedBox(
         height: 300.0,
         width: 325.0,
-        child: Carousel(          
+        child: Carousel(
           autoplay: true,
           dotSize: 2,
           borderRadius: true,
@@ -411,78 +433,257 @@ class Home extends StatelessWidget {
           dotIncreasedColor: Colors.red[300],
           dotIncreaseSize: 6,
           animationDuration: Duration(seconds: 3),
-          images: [ 
-            // Image.asset('images/Orkinos.jpg'),
-            AssetImage('images/Orkinos.jpg',),            
-            AssetImage('images/ScorpionX.jpg'),
-            AssetImage('images/Yabali.jpg'),
-            AssetImage("images/PelicanYatay8m3.png"),
-            AssetImage("images/Diamond31.png"),
+          images: [
+            GestureDetector(
+              child: Image.asset('images/Orkinos.jpg'),
+              onTap: () {
+                Navigator.pushNamed(context, "/products");
+              },
+            ),
+            GestureDetector(
+              child: Image.asset('images/ScorpionX.jpg'),
+              onTap: () {
+                Navigator.pushNamed(context, "/products");
+              },
+            ),
+            GestureDetector(
+              child: Image.asset('images/Yabali.jpg'),
+              onTap: () {
+                Navigator.pushNamed(context, "/products");
+              },
+            ),
+            GestureDetector(
+              child: Image.asset('images/PelicanYatay8m3.png'),
+              onTap: () {
+                Navigator.pushNamed(context, "/products");
+              },
+            ),
+            GestureDetector(
+              child: Image.asset('images/Diamond31.png'),
+              onTap: () {
+                Navigator.pushNamed(context, "/products");
+              },
+            ),
           ],
         ));
   }
 
-  Stack buildStackAnaSayfa1(BuildContext context) {
+  SizedBox anaSayfaKayanResimler1(BuildContext context) {
+    return SizedBox(
+      height: 300.0,
+      width: 325.0,
+      child: Carousel(
+        autoplay: true,
+        dotSize: 2,
+        borderRadius: true,
+        dotBgColor: Colors.white,
+        dotColor: Colors.grey,
+        dotIncreasedColor: Colors.red[300],
+        dotIncreaseSize: 6,
+        animationDuration: Duration(seconds: 8),
+        images: [
+          _stackHomePage1(context),
+          _stackHomePage2(context),
+          _stackHomePage3(context),
+          _stackHomePage4(context),
+          _stackHomePage5(context),
+        ],
+      ),
+    );
+  }
+
+  Stack _stackHomePage5(BuildContext context) {
+    return _stackHomePage(
+      context: context,
+      imageName: 'images/samanbalya.gif',
+      text1: "Balyada",
+      textStyle1: _textStyleSmall(),
+      geometryText1: EdgeInsets.fromLTRB(10, 30, 10, 20),
+      text2: "En İyisini",
+      textStyle2: _textStyleSmall(),
+      geometryText2: EdgeInsets.fromLTRB(10, 45, 10, 20),
+      text3: "İstiyorsan",
+      textStyle3: _textStyleSmall(),
+      geometryText3: EdgeInsets.fromLTRB(10, 60, 10, 20),
+      text4: "PAKSAN",
+      textStyle4: _textStyleBigNBold(),
+      geometryText4: EdgeInsets.fromLTRB(10, 75, 10, 20),
+      onTap: () {
+        Navigator.pushNamed(context, "/products");
+      },
+      geometryText5: EdgeInsets.fromLTRB(10, 97, 10, 20),
+    );
+  }
+
+  Stack _stackHomePage4(BuildContext context) {
+    return _stackHomePage(
+      context: context,
+      imageName: 'images/silaj.gif',
+      text1: "Silajda",
+      textStyle1: _textStyleSmall(),
+      geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
+      text2: "En İyisini",
+      textStyle2: _textStyleSmall(),
+      geometryText2: EdgeInsets.fromLTRB(10, 30, 10, 20),
+      text3: "İstiyorsan",
+      textStyle3: _textStyleSmall(),
+      geometryText3: EdgeInsets.fromLTRB(10, 45, 10, 20),
+      text4: "PAKSAN",
+      textStyle4: _textStyleBigNBold(),
+      geometryText4: EdgeInsets.fromLTRB(10, 60, 10, 20),
+      onTap: () {
+        Navigator.pushNamed(context, "/products");
+      },
+      geometryText5: EdgeInsets.fromLTRB(10, 82, 10, 20),
+    );
+  }
+
+  Stack _stackHomePage3(BuildContext context) {
+    return _stackHomePage(
+      context: context,
+      imageName: 'images/yemkarmasol.gif',
+      text1: "Yem Karmada",
+      textStyle1: _textStyleSmall(),
+      geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
+      text2: "En İyisini",
+      textStyle2: _textStyleSmall(),
+      geometryText2: EdgeInsets.fromLTRB(10, 30, 10, 20),
+      text3: "İstiyorsan",
+      textStyle3: _textStyleSmall(),
+      geometryText3: EdgeInsets.fromLTRB(10, 45, 10, 20),
+      text4: "PAKSAN",
+      textStyle4: _textStyleBigNBold(),
+      geometryText4: EdgeInsets.fromLTRB(10, 60, 10, 20),
+      onTap: () {
+        Navigator.pushNamed(context, "/products");
+      },
+      geometryText5: EdgeInsets.fromLTRB(10, 82, 10, 20),
+    );
+  }
+
+  Stack _stackHomePage2(BuildContext context) {
+    return _stackHomePage(
+      context: context,
+      imageName: 'images/traktor.jpg',
+      text1: "Balyada",
+      textStyle1: _textStyleSmall(),
+      geometryText1: EdgeInsets.fromLTRB(10, 45, 10, 20),
+      text2: "En İyisini",
+      textStyle2: _textStyleSmall(),
+      geometryText2: EdgeInsets.fromLTRB(10, 60, 10, 20),
+      text3: "İstiyorsan",
+      textStyle3: _textStyleSmall(),
+      geometryText3: EdgeInsets.fromLTRB(10, 75, 10, 20),
+      text4: "PAKSAN",
+      textStyle4: _textStyleBigNBold(),
+      geometryText4: EdgeInsets.fromLTRB(10, 90, 10, 20),
+      onTap: () {
+        Navigator.pushNamed(context, "/products");
+      },
+      geometryText5: EdgeInsets.fromLTRB(10, 112, 10, 20),
+    );
+  }
+
+  Stack _stackHomePage1(BuildContext context) {
+    return _stackHomePage(
+      context: context,
+      imageName: 'images/paksan1.gif',
+      text1: "Paksan Makina",
+      textStyle1: _textStyleBigNBold(),
+      geometryText1: EdgeInsets.fromLTRB(70, 30, 10, 20),
+      text2: "Yarım Asırlık Tecrübe,",
+      textStyle2: _textStyleSmall(),
+      geometryText2: EdgeInsets.fromLTRB(72, 55, 10, 20),
+      text3: "Geniş Servis Ağı,",
+      textStyle3: _textStyleSmall(),
+      geometryText3: EdgeInsets.fromLTRB(72, 70, 10, 20),
+      text4: "6 Kıtaya İhracat",
+      textStyle4: _textStyleSmall(),
+      geometryText4: EdgeInsets.fromLTRB(72, 85, 10, 20),
+      onTap: () {
+        Navigator.pushNamed(context, "/products");
+      },
+      geometryText5: EdgeInsets.fromLTRB(72, 97, 10, 20),
+    );
+  }
+
+  Stack _stackHomePage({
+    BuildContext context,
+    String imageName,
+    String text1,
+    TextStyle textStyle1,
+    EdgeInsetsGeometry geometryText1,
+    String text2,
+    TextStyle textStyle2,
+    EdgeInsetsGeometry geometryText2,
+    String text3,
+    TextStyle textStyle3,
+    EdgeInsetsGeometry geometryText3,
+    String text4,
+    TextStyle textStyle4,
+    EdgeInsetsGeometry geometryText4,
+    Function onTap,
+    EdgeInsetsGeometry geometryText5,
+  }) {
     return Stack(
       children: <Widget>[
-        Container(height: 270,
-          child: Image.asset('images/paksan1.gif',fit: BoxFit.fill),
-      
+        Container(
+          height: 270,
+          child: Image.asset(imageName, fit: BoxFit.fill),
         ),
         Container(
-          padding: EdgeInsets.fromLTRB(70, 30, 10, 20),
-          // padding: EdgeInsets.fromLTRB(left, top, right, bottom)
+          padding: geometryText1,
           child: Text(
-            "Paksan Makina",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+            text1,
+            style: textStyle1,
           ),
         ),
         Container(
-          padding: EdgeInsets.fromLTRB(72, 55, 10, 20),
+          padding: geometryText2,
           child: Text(
-            "Yarım Asırlık Tecrübe,",
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.white,
-            ),
+            text2,
+            style: textStyle2,
           ),
         ),
         Container(
-          padding: EdgeInsets.fromLTRB(72, 70, 10, 20),
+          padding: geometryText3,
           child: Text(
-            "Geniş Servis Ağı,",
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.white,
-            ),
+            text3,
+            style: textStyle3,
           ),
         ),
         Container(
-          padding: EdgeInsets.fromLTRB(72, 85, 10, 20),
+          padding: geometryText4,
           child: Text(
-            "6 Kıtaya İhracat",
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.white,
-            ),
+            text4,
+            style: textStyle4,
           ),
         ),
-        Container( 
-          padding: EdgeInsets.fromLTRB(72, 97, 10, 20),
+        Container(
+          padding: geometryText5,
           child: RaisedButton(
             child: Text("Daha Fazlası"),
             color: Color.fromARGB(180, 255, 116, 0),
             textColor: Colors.white,
-            onPressed: () {
-              Navigator.pushNamed(context, "/products");
-            },
+            onPressed: onTap,
           ),
         ),
       ],
+    );
+  }
+
+  TextStyle _textStyleSmall() {
+    return TextStyle(
+      fontSize: 14,
+      color: Colors.white,
+    );
+  }
+
+  TextStyle _textStyleBigNBold() {
+    return TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
     );
   }
 }

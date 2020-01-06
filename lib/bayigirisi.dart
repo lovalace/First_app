@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
+import 'constants.dart';
 
 class BayiGirisi extends StatelessWidget {
+  final TextEditingController sifre = new TextEditingController();
+  
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NewDrawer(),
@@ -21,9 +24,14 @@ class BayiGirisi extends StatelessWidget {
                 ),
                 Container(
                   child: TextField(
+                      controller: sifre,
+                      obscureText: true,
                     decoration: InputDecoration(
+                        fillColor: Colors.grey,
+                        filled: true,
                         border: InputBorder.none,
                         hintText: 'Şifrenizi Giriniz'),
+                        
                   ),
                 ),
                 Container(
@@ -33,7 +41,7 @@ class BayiGirisi extends StatelessWidget {
                     color: Color.fromARGB(180, 255, 116, 0),
                     textColor: Colors.white,
                     onPressed: () {
-                      // Navigator.pushNamed(context, "/products");
+                        sifre.text  == kBayiSifre ? Navigator.pushNamed(context, "/bayigirisipdf") : print('Şifre Yanlış');                       
                     },
                   ),
                 ),
@@ -47,7 +55,6 @@ class BayiGirisi extends StatelessWidget {
 
   Container _textBayiGirisi() {
     return Container(
-
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
       color: Colors.grey[300],
       child: Text(

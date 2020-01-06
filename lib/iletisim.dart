@@ -18,9 +18,7 @@ class Iletisim extends StatelessWidget {
             TextBiziTakipEdin(),
             Row(
               children: <Widget>[
-                Expanded(
-                  child: IconFaceBook(),
-                ),
+                Expanded(child: IconFaceBook()),
                 Expanded(child: IconLinkedin()),
                 Expanded(child: IconYoutube()),
                 Expanded(child: IconInstagram()),
@@ -186,7 +184,7 @@ class IconFaceBook extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.facebookSquare),
         onPressed: () {
-          LaunchUrl(url: kUrlFacebook )._launchURL();
+          LaunchUrl(url: kUrlFacebook)._launchURL();
         },
         color: Colors.blue[800],
         iconSize: 35,
@@ -203,7 +201,7 @@ class IconYoutube extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.youtubeSquare),
         onPressed: () {
-          LaunchUrl(url: kUrlYoutube )._launchURL();
+          LaunchUrl(url: kUrlYoutube)._launchURL();
         },
         color: Colors.red[800],
         iconSize: 35,
@@ -220,7 +218,7 @@ class IconInstagram extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.instagram),
         onPressed: () {
-          LaunchUrl(url: kUrlInstagram )._launchURL();
+          LaunchUrl(url: kUrlInstagram)._launchURL();
         },
         color: Colors.black87,
         iconSize: 35,
@@ -229,10 +227,11 @@ class IconInstagram extends StatelessWidget {
     );
   }
 }
-class LaunchUrl{
+
+class LaunchUrl {
   String url;
   LaunchUrl({@required this.url});
-    _launchURL() async {    
+  _launchURL() async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -240,16 +239,15 @@ class LaunchUrl{
     }
   }
 }
+
 class IconLinkedin extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Container(
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.linkedin),
         onPressed: () {
-          LaunchUrl(url: kUrlLinkedin )._launchURL();
+          LaunchUrl(url: kUrlLinkedin)._launchURL();
         },
         color: Colors.blue[800],
         iconSize: 35,
@@ -281,12 +279,12 @@ class _MyAppState extends State<GMaps> {
   @override
   Widget build(BuildContext context) {
     return GoogleMap(
-      mapToolbarEnabled: true,
-      mapType: MapType.normal,
-      onMapCreated: _onMapCreated,
+      mapToolbarEnabled: true,    
+      mapType: MapType.normal,      
+      // onMapCreated: _onMapCreated,
       initialCameraPosition: CameraPosition(
         target: _center,
-        zoom: 14.0,
+        zoom: 18.0,
       ),
     );
   }
