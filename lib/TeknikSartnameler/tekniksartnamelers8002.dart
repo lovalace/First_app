@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
-import 'package:first_app/kvkk.dart';
+import 'package:first_app/pdfviewPage.dart';
 import 'package:first_app/constants.dart';
 
 class TeknikSartnamelerSuperS8002 extends StatelessWidget {

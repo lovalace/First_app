@@ -27,7 +27,6 @@ import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesupers8002.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesuperyunus.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmeyemkarma.dart';
 
-
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -52,19 +51,27 @@ void main() {
       "/ottoplama": (context) => OtToplama(),
       "/bayigirisipdf": (context) => BayiGirisiPdf(),
       "/deneyraporlari": (context) => DeneyRaporlari(),
-      "/deneyraporlaridigerurunlerimiz": (context) => DeneyRaporlariDigerUrunlerimiz(),
+      "/deneyraporlaridigerurunlerimiz": (context) =>
+          DeneyRaporlariDigerUrunlerimiz(),
       "/deneyraporlarisuper8002": (context) => DeneyRaporlariSuper8002(),
       "/superyunusbalyamakinesi": (context) => SuperYunusBalyaMakinesi(),
       "/yemkarmamakinesi": (context) => YemKarmaMakinesi(),
       "/tekniksartnameler": (context) => TeknikSartnameler(),
       "/tekniksartnamelersuper8002": (context) => TeknikSartnamelerSuperS8002(),
-      "/tekniksartnamelerdigerurunlerimiz": (context) => TeknikSartnamelerDigerUrunlerimiz(),
-      "/tekniksartnamelersuperyunusbalyamakinesi": (context) => TeknikSartnamelerSuperYunusBalyaMakinesi(),
-      "/tekniksartnameleryemkarmamakinesi": (context) => TeknikSartnamelerYemKarmaMakinesi(),
-      "/ziraikredilendirmebelgeleri": (context) => ZiraiKredilendirmeBelgeleri(),
-      "/ziraikredilendirmedigerurunlerimiz": (context) => ZiraiKredilendirmeDigerUrunlerimiz(),
-      "/ziraikredilendirmesupers8002": (context) => ZiraiKredilendirmeSuperS8002(),
-      "/ziraikredilendirmesuperyunus": (context) => ZiraiKredilendirmeSuperYunus(),
+      "/tekniksartnamelerdigerurunlerimiz": (context) =>
+          TeknikSartnamelerDigerUrunlerimiz(),
+      "/tekniksartnamelersuperyunusbalyamakinesi": (context) =>
+          TeknikSartnamelerSuperYunusBalyaMakinesi(),
+      "/tekniksartnameleryemkarmamakinesi": (context) =>
+          TeknikSartnamelerYemKarmaMakinesi(),
+      "/ziraikredilendirmebelgeleri": (context) =>
+          ZiraiKredilendirmeBelgeleri(),
+      "/ziraikredilendirmedigerurunlerimiz": (context) =>
+          ZiraiKredilendirmeDigerUrunlerimiz(),
+      "/ziraikredilendirmesupers8002": (context) =>
+          ZiraiKredilendirmeSuperS8002(),
+      "/ziraikredilendirmesuperyunus": (context) =>
+          ZiraiKredilendirmeSuperYunus(),
       "/ziraikredilendirmeyemkarma": (context) => ZiraiKredilendirmeYemKarma(),
     },
   ));
@@ -81,7 +88,7 @@ class NewDrawer extends StatelessWidget {
           _listTile(context, "HAKKIMIZDA", "/aboutus"),
           _listTile(context, "ÜRÜNLER", "/products"),
           _listTile(context, "BİZDEN HABERLER", "/newsfromus"),
-          _listTile(context, "BAYİ GİRİŞİ", "/bayigirisi"),          
+          _listTile(context, "BAYİ GİRİŞİ", "/bayigirisi"),
           _listTile(context, "KİŞİSEL VERİLERİN KORUNMASI", "/kvkk"),
           _listTile(context, "KALİTE POLİTİKAMIZ", "/kalite"),
           _listTile(context, "İLETİŞİM", "/iletisim")

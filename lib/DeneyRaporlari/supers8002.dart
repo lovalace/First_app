@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
-import 'package:first_app/kvkk.dart';
 import 'package:first_app/constants.dart';
+import 'package:first_app/pdfviewPage.dart';
 
 class DeneyRaporlariSuper8002 extends StatelessWidget {
   Widget build(BuildContext context) {

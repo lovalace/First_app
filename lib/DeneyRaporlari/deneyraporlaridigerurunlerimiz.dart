@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
-import 'package:first_app/kvkk.dart';
 import 'package:first_app/constants.dart';
+import 'package:first_app/pdfviewPage.dart';
 
 class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -30,9 +30,10 @@ class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
                         context: context,
                         pdfAsset: kPdfAssetKirlangic,
                         pdfAssetNamed: assetPDFKirlangic,
-                        pdfName: kPdfKirlangic)),                        
+                        pdfName: kPdfKirlangic)),
                 _buttonDRDU(
-                    'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU', () => _pdfAc(
+                    'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU',
+                    () => _pdfAc(
                         context: context,
                         pdfAsset: kPdfAssetOrkinos870,
                         pdfAssetNamed: assetPDFOrkinos870,
@@ -44,17 +45,23 @@ class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
                         pdfAsset: kPdfAssetOrkinos6127,
                         pdfAssetNamed: assetPDFOrkinos6127,
                         pdfName: kPdfOrkinos6127)),
-                _buttonDRDU('Yengeç 135 02.10.2024', () => _pdfAc(
+                _buttonDRDU(
+                    'Yengeç 135 02.10.2024',
+                    () => _pdfAc(
                         context: context,
                         pdfAsset: kPdfAssetYengec135,
                         pdfAssetNamed: assetPDFYengec135,
                         pdfName: kPdfYengec135)),
-                _buttonDRDU('Yengeç 165 02.10.2024', () => _pdfAc(
+                _buttonDRDU(
+                    'Yengeç 165 02.10.2024',
+                    () => _pdfAc(
                         context: context,
                         pdfAsset: kPdfAssetYengec165,
                         pdfAssetNamed: assetPDFYengec165,
                         pdfName: kPdfYengec165)),
-                _buttonDRDU('Yengeç 195 02.10.2024', () => _pdfAc(
+                _buttonDRDU(
+                    'Yengeç 195 02.10.2024',
+                    () => _pdfAc(
                         context: context,
                         pdfAsset: kPdfAssetYengec195,
                         pdfAssetNamed: assetPDFYengec195,

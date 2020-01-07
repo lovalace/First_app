@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 import 'constants.dart';
-import 'kvkk.dart';
+import 'package:first_app/pdfviewPage.dart';
 
 class BayiGirisiPdf extends StatelessWidget {
   Widget build(BuildContext context) {

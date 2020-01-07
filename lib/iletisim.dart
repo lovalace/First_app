@@ -184,7 +184,7 @@ class IconFaceBook extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.facebookSquare),
         onPressed: () {
-          LaunchUrl(url: kUrlFacebook)._launchURL();
+          LaunchUrl(url: kUrlFacebook).launchURL();
         },
         color: Colors.blue[800],
         iconSize: 35,
@@ -201,7 +201,7 @@ class IconYoutube extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.youtubeSquare),
         onPressed: () {
-          LaunchUrl(url: kUrlYoutube)._launchURL();
+          LaunchUrl(url: kUrlYoutube).launchURL();
         },
         color: Colors.red[800],
         iconSize: 35,
@@ -218,7 +218,7 @@ class IconInstagram extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.instagram),
         onPressed: () {
-          LaunchUrl(url: kUrlInstagram)._launchURL();
+          LaunchUrl(url: kUrlInstagram).launchURL();
         },
         color: Colors.black87,
         iconSize: 35,
@@ -231,7 +231,7 @@ class IconInstagram extends StatelessWidget {
 class LaunchUrl {
   String url;
   LaunchUrl({@required this.url});
-  _launchURL() async {
+  launchURL() async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -247,7 +247,7 @@ class IconLinkedin extends StatelessWidget {
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.linkedin),
         onPressed: () {
-          LaunchUrl(url: kUrlLinkedin)._launchURL();
+          LaunchUrl(url: kUrlLinkedin).launchURL();
         },
         color: Colors.blue[800],
         iconSize: 35,
