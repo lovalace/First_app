@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 //import 'package:first_app/main.dart';
-import 'dart:math';
-import 'package:first_app/products.dart';
 
 //global olmalı
 Widget urunlerWidget(BuildContext context,String _url , String _imageUrl, String _productName ,String _catagoryName )=> Stack(children: <Widget>[
@@ -35,12 +33,11 @@ Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
 Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3,);
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
-          //  Navigator.pushNamed(context, _url,arguments: _url);
+            Navigator.pushNamed(context, _url);
          // String itemUrl = "/productdetails";
-           int rand = new Random().nextInt(100);
-            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>
-            Orkinos870(),
-            ));
+         //   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>
+         //   Orkinos870(),
+         //   ));
           }, 
            child: imageAsset(_imageUrl)
           );

@@ -112,7 +112,7 @@
         {
           "imageUrl": "images/Orkinos870X-1.jpg",
           "ProductName": "Diamond 1.5m3",
-           "url":"/Diamond1.5m3"
+           "url":"/Diamond15m3"
         }
       ]
     },
@@ -145,7 +145,7 @@
         {
           "imageUrl": "images/Orkinos.jpg",
           "ProductName": "Yengeç Çayır Biçme",
-           "url":"/YengecCayirBicme"
+           "url":"/Yengec"
         }
       ]
     },
@@ -159,7 +159,7 @@
         {
           "imageUrl": "images/Orkinos.jpg",
           "ProductName": "Kırlangıç Ot Toplama",
-           "url":"/KirlangicOtToplama"
+           "url":"/Kirlangic"
         }
       ]
     }

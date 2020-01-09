@@ -1,3 +1,4 @@
+import 'package:first_app/data.dart';
 import 'package:first_app/utility.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
@@ -229,84 +230,83 @@ class Products extends StatelessWidget {
   }
 }
 
-class ProductDetails extends StatelessWidget {
-  final String productText;
-  final String productDetailText;
-  final String name;
+// class ProductDetails extends StatelessWidget {
+//   final String productText;
+//   final String productDetailText;
+//   final String name;
 
-  ProductDetails({this.productText, this.productDetailText, this.name});
+//   ProductDetails({this.productText, this.productDetailText, this.name});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: NewDrawer(),
-      appBar: NewAppBar(),
-      backgroundColor: Colors.white,
-      body: Scrollbar(
-        child: SingleChildScrollView(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                productDetailsIamages(),
-                Text(
-                this.productText,
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-               // Center(child: Text(pageID.toString())),
-                Center(child: Text(name)),
-                Text( productDetailText ),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
-                SizedBox(
-                  height: 20,
-                ),
-                imageAsset("images/Orkinos870.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: 
-                    _datacolumn("ÖZELLİKLER","4 İPLİ","4 İPLİ H","6 İPLİ","6 İPLİ H"),
-                  rows: [
-                    _datarow("Balya Genişliği", "80", "80", "120", "120"),
-                    _datarow("Balya Yüksekliği", "50-260", "50-260", "50- 270", "50- 270"),
-                    _datarow("Balya / Saat", "100", "130", "130", "150"),
-                    _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
-                    _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
-                    _datarow("Dişli Aralığı", "61", "61", "61", "61"),
-                    _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
-                    _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
-                    _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik"),
-                    _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
-                    _datarow("İp Sayısı", "4", "4", "6", "6"),
-                    _datarow("İp Kapasitesi", "24", "24", "24", "24"),
-                    _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
-                    _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm"),
-                    _datarow("Rotor", "Helisel Rotor", "Helisel Rotor", "Heliser Rotor", "Heliser Rotor"),
-                    _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
-                    _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
-                    _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon", "70", "70"),
-                    _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       drawer: NewDrawer(),
+//       appBar: NewAppBar(),
+//       backgroundColor: Colors.white,
+//       body: Scrollbar(
+//         child: SingleChildScrollView(
+//           child: Column(
+//               mainAxisAlignment: MainAxisAlignment.start,
+//               crossAxisAlignment: CrossAxisAlignment.stretch,
+//               children: <Widget>[
+//                 productDetailsIamages(),
+//                 Text(
+//                 this.productText,
+//                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+//                 ),
+//                // Center(child: Text(pageID.toString())),
+//                 Center(child: Text(name)),
+//                 Text( productDetailText ),
+//                 Text("Balya Yüksekliği: 70 cm"),
+//                 Text("50 – 270 cm"),
+//                 SizedBox(
+//                   height: 20,
+//                 ),
+//                 imageAsset("images/Orkinos870.png"),
+//                 DataTable(
+//                   columnSpacing: 0,
+//                   columns: 
+//                     _datacolumn("ÖZELLİKLER","4 İPLİ","4 İPLİ H","6 İPLİ","6 İPLİ H"),
+//                   rows: [
+//                     _datarow("Balya Genişliği", "80", "80", "120", "120"),
+//                     _datarow("Balya Yüksekliği", "50-260", "50-260", "50- 270", "50- 270"),
+//                     _datarow("Balya / Saat", "100", "130", "130", "150"),
+//                     _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
+//                     _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
+//                     _datarow("Dişli Aralığı", "61", "61", "61", "61"),
+//                     _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
+//                     _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
+//                     _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik"),
+//                     _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
+//                     _datarow("İp Sayısı", "4", "4", "6", "6"),
+//                     _datarow("İp Kapasitesi", "24", "24", "24", "24"),
+//                     _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
+//                     _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm"),
+//                     _datarow("Rotor", "Helisel Rotor", "Helisel Rotor", "Heliser Rotor", "Heliser Rotor"),
+//                     _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
+//                     _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik", "Hidrolik"),
+//                     _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
+//                     _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
+//                     _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
+//                     _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
+//                     _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon", "70", "70"),
+//                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
-                  ],
-                )
-                //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+//                   ],
+//                 )
+//                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
 
-                // Image.asset('images/FSon.jpg'),
-              ]),
-        ),
-      ),
-    );
-  }
-}
+//                 // Image.asset('images/FSon.jpg'),
+//               ]),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 
 
 class Orkinos870 extends StatelessWidget {
-  //Orkinos870({this.pageID, this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -327,10 +327,7 @@ class Orkinos870 extends StatelessWidget {
                 ),
                // Center(child: Text(pageID.toString())),
                // Center(child: Text(name)),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
+                Text( orkinos870 ),
                 Text("Balya Yüksekliği: 70 cm"),
                 Text("50 – 270 cm"),
                 SizedBox(
@@ -367,10 +364,10 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
 
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
         ),
       ),
@@ -398,10 +395,7 @@ class Orkinos1270 extends StatelessWidget {
                   "ORKİNOS 1270",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
+                Text(orkinos1270),
                 Text("Balya Yüksekliği: 70 cm"),
                 Text("50 – 270 cm"),
                 SizedBox(
@@ -438,9 +432,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -471,12 +465,11 @@ class SuperS8002 extends StatelessWidget {
                   "SÜPER S8002",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(supers8002),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -511,9 +504,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -542,12 +535,11 @@ class SuperS8002E extends StatelessWidget {
                   "SÜPER S8002 E",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(super8002E),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -582,9 +574,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -613,12 +605,11 @@ class SuperS8002EDual1 extends StatelessWidget {
                   "SÜPER 8002E DUAL",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(super8002EDual1),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -653,9 +644,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -684,12 +675,11 @@ class SuperS8002EDual2 extends StatelessWidget {
                   "SÜPER 8002E DUAL 2",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(super8002Dual2),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -724,9 +714,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -755,12 +745,11 @@ class SuperYunus extends StatelessWidget {
                   "SÜPER YUNUS",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(superYunus),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -795,9 +784,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -826,12 +815,11 @@ class SuperYunus3Yabali extends StatelessWidget {
                   "SÜPER YUNUS 3 YABALI",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(superYunusYabali),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -866,9 +854,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -898,12 +886,11 @@ class SuperYunusDual1 extends StatelessWidget {
                   "SÜPER YUNUS DUAL",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(superYunusDual1),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -938,9 +925,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -969,12 +956,11 @@ class SuperYunusDual2 extends StatelessWidget {
                   "SÜPER YUNUS DUAL 2",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(superYunusDual2),
+                Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
+                Text("Balya Ağırlığı – Ot: 25 – 35 kg"),
+                Text("Balya / Saat: 250 – 350"),
+                Text("Balya Ölçüsü: 36 x 46 cm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -1009,9 +995,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1041,12 +1027,7 @@ class Hammer extends StatelessWidget {
                   "HAMMER",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                    '''Orkinos, Türk mühendislerimiz tarafından geliştirilen Türkiye’nin ilk ve tek yerli prizmatik büyük balya makinasıdır. 6 ipli çift düğüm 120×70 cm balya genişliği, 230 cm tırmık kapasitesi, dayanıklı ve sağlam yapısı ile büyük arazilerde kullanılmak için
-tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve haşbaysız olarak üretilmektedir."
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(hammer),
                 SizedBox(
                   height: 20,
                 ),
@@ -1081,9 +1062,9 @@ tasarlanmıştır. 6 ipli çift düğümlü bağlama grubu ile haşbaylı ve 
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1112,10 +1093,7 @@ class Piranha extends StatelessWidget {
                   "PİRANHA",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(piranha),
                 SizedBox(
                   height: 20,
                 ),
@@ -1150,9 +1128,9 @@ class Piranha extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1183,10 +1161,7 @@ class Pelican8m3 extends StatelessWidget {
                   "PELİCAN 8M3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(pelican8m3),
                 SizedBox(
                   height: 20,
                 ),
@@ -1221,9 +1196,9 @@ class Pelican8m3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1251,10 +1226,7 @@ class Pelican6M3 extends StatelessWidget {
                   "PELİCAN 6M3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(pelican6m3),
                 SizedBox(
                   height: 20,
                 ),
@@ -1289,9 +1261,9 @@ class Pelican6M3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1319,10 +1291,7 @@ class Pelican4M3 extends StatelessWidget {
                   "PELİCAN 4M3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(pelican4m3 ),
                 SizedBox(
                   height: 20,
                 ),
@@ -1357,9 +1326,9 @@ class Pelican4M3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1387,10 +1356,7 @@ class Diamond3M3 extends StatelessWidget {
                   "DIAMOND 3m3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(diamond3m3),
                 SizedBox(
                   height: 20,
                 ),
@@ -1425,9 +1391,9 @@ class Diamond3M3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1455,10 +1421,7 @@ class Diamond2M3 extends StatelessWidget {
                   "DIAMOND 2m3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(diamond2m3),
                 SizedBox(
                   height: 20,
                 ),
@@ -1493,9 +1456,9 @@ class Diamond2M3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+               Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1523,10 +1486,7 @@ class Diamond15M3 extends StatelessWidget {
                   "DIAMOND 1.5m3",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(diamond15m3),
                 SizedBox(
                   height: 20,
                 ),
@@ -1561,9 +1521,9 @@ class Diamond15M3 extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1591,10 +1551,7 @@ class Scorpion extends StatelessWidget {
                   "SCORPION SIRA BAĞIMSIZ SİLAJ BİÇER",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(scorpion),
                 SizedBox(
                   height: 20,
                 ),
@@ -1629,9 +1586,9 @@ class Scorpion extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1659,10 +1616,7 @@ class Ahtapot extends StatelessWidget {
                   "AHTAPOT SİLAJ PAKETLEME MAKİNASI",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(ahtapot),
                 SizedBox(
                   height: 20,
                 ),
@@ -1697,9 +1651,9 @@ class Ahtapot extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1727,10 +1681,7 @@ class Yengec extends StatelessWidget {
                   "YENGEÇ ÇAYIR BİÇME",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text( yengec),
                 SizedBox(
                   height: 20,
                 ),
@@ -1765,9 +1716,9 @@ class Yengec extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
+                ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                // Image.asset('images/FSon.jpg'),
+                 Image.asset('images/FSon.jpg'),
               ]),
               
         ),
@@ -1795,10 +1746,7 @@ class Kirlangic extends StatelessWidget {
                   "KIRLANGIÇ OT TOPLAMA MAKİNASI",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Text( '''Piranha Serisi yurtdışı taleplere yönelik hazırlanmıştır, düşük traktör ihtiyacı sayesinde küçük ölçekli arazilerde kullanılmaktadır.2 ipli ve haşbaysız olarak üretilmektedir.
-            '''),
-                Text("Balya Yüksekliği: 70 cm"),
-                Text("50 – 270 cm"),
+                Text(kirlangic),
                 SizedBox(
                   height: 20,
                 ),
@@ -1833,8 +1781,8 @@ class Kirlangic extends StatelessWidget {
                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
 
                   ],
-                )
-                // Image.asset('images/FSon.jpg'),
+                ),
+               Image.asset('images/FSon.jpg'),
               ]),
               
         ),
