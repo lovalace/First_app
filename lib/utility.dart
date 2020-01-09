@@ -34,6 +34,10 @@ Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3,);
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
             Navigator.pushNamed(context, _url);
+         // String itemUrl = "/productdetails";
+         //   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>
+         //   Orkinos870(),
+         //   ));
           }, 
            child: imageAsset(_imageUrl)
           );

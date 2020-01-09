@@ -1,13 +1,167 @@
 {
-    "headerText": "Büyük Balya Makinaları X",
-    "url": "/buyukbalya",
-    "imageUrl": "images/Orkinos.jpg",
-    "ProductName": null,
-    "categoryName": "Büyük Balya Makinaları X",
-    "subProduct": [
-      { "imageUrl": "images/Orkinos.jpg",
-      "ProductName": "Orkinos 1270 X" },
-       { "imageUrl": "images/Orkinos870X-1.jpg",
-      "ProductName": "Orkinos 870 X" }
-    ]
-  }
+  "product": [
+    {
+      "headerText": "Büyük Balya Makinaları",
+      "url": "/buyukbalya",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Büyük Balya Makinaları",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Orkinos 1270",
+          "url":"/Orkinos1270"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Orkinos 870",
+          "url":"/Orkinos870"
+        }
+      ]
+    },
+    {
+      "headerText": "Küçük Balya Makinaları",
+      "url": "/kucukbalya",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Küçük Balya Makinaları",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Super S8002",
+          "url":"/SuperS8002"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super S8002E",
+          "url":"/SuperS8002E"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super S8002E Dual 1",
+          "url":"/SuperS8002EDual1"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super S8002E Dual 2",
+          "url":"/SuperS8002EDual2"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super Yunus",
+          "url":"/SuperYunus"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super Yunus 3 Yabalı",
+          "url":"/SuperYunus3Yabali"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super Yunus Dual 1",
+          "url":"/SuperYunusDual1"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Super Yunus Dual 2",
+          "url":"/SuperYunusDual2"
+        }
+      ]
+    },
+    {
+      "headerText": "Yatay Yem Karma Makinaları",
+      "url": "/yatayyemkarma",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Yatay Yem Karma",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Pelican 8M3",
+           "url":"/Pelican8M3"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Pelican 6M3",
+           "url":"/Pelican6M3"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Pelican 4M3",
+           "url":"/Pelican4M3"
+        }
+      ]
+    },
+    {
+      "headerText": "Dikey Yem Karma Makinaları",
+      "url": "/dikeyyemkarma",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Dikey Yem Karma",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Diamond 3m3",
+           "url":"/Diamond3m3"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Diamond 2m3",
+           "url":"/Diamond2m3"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Diamond 1.5m3",
+           "url":"/Diamond15m3"
+        }
+      ]
+    },
+    {
+      "headerText": "Silaj Ekipmanları",
+      "url": "/silaj",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Silaj Ekipmanları",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Scorpion",
+           "url":"/Scorpion"
+        },
+        {
+          "imageUrl": "images/Orkinos870X-1.jpg",
+          "ProductName": "Ahtapot",
+           "url":"/Ahtapot"
+        }
+      ]
+    },
+    {
+      "headerText": "Çayır Biçme",
+      "url": "/cayirbicme",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Çayır Biçme  Makinaları",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Yengeç Çayır Biçme",
+           "url":"/Yengec"
+        }
+      ]
+    },
+    {
+      "headerText": "Ot Toplama",
+      "url": "/ottoplama",
+      "imageUrl": "images/Orkinos.jpg",
+      "ProductName": null,
+      "categoryName": "Ot Toplama Makinaları",
+      "subProduct": [
+        {
+          "imageUrl": "images/Orkinos.jpg",
+          "ProductName": "Kırlangıç Ot Toplama",
+           "url":"/Kirlangic"
+        }
+      ]
+    }
+  ]
+}
