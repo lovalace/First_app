@@ -39,7 +39,7 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
          // String itemUrl = "/productdetails";
            int rand = new Random().nextInt(100);
             Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>
-            ProductDetails(name:_url,pageID: rand),
+            Orkinos870(),
             ));
           }, 
            child: imageAsset(_imageUrl)
