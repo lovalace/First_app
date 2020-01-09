@@ -1,9 +1,9 @@
-class ProductList {
+class ProductsList {
   List<Product> product;
 
-  ProductList({this.product});
+  ProductsList({this.product});
 
-  ProductList.fromJson(Map<String, dynamic> json) {
+  ProductsList.fromJson(Map<String, dynamic> json) {
     if (json['product'] != null) {
       product = new List<Product>();
       json['product'].forEach((v) {
@@ -68,18 +68,24 @@ class Product {
 class SubProduct {
   String imageUrl;
   String productName;
+  String url;
 
-  SubProduct({this.imageUrl, this.productName});
+  SubProduct({this.imageUrl, this.productName, this.url});
 
   SubProduct.fromJson(Map<String, dynamic> json) {
     imageUrl = json['imageUrl'];
     productName = json['ProductName'];
+    url = json['url'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['imageUrl'] = this.imageUrl;
     data['ProductName'] = this.productName;
+    data['url'] = this.url;
     return data;
   }
 }
+
+
+

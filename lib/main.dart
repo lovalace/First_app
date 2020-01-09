@@ -72,7 +72,7 @@ void main() {
           ZiraiKredilendirmeSuperS8002(),
       "/ziraikredilendirmesuperyunus": (context) =>
           ZiraiKredilendirmeSuperYunus(),
-      "/ziraikredilendirmeyemkarma": (context) => ZiraiKredilendirmeYemKarma(),
+      "/ziraikredilendirmeyemkarma": (context) => ZiraiKredilendirmeYemKarma  (),
     },
   ));
 }

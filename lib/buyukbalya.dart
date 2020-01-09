@@ -38,7 +38,7 @@ class Silaj extends StatelessWidget {
   }
 }
  var decode = jsonDecode(allProducts);
- var _products = ProductList.fromJson(decode);
+ var _products = ProductsList.fromJson(decode);
 
 class CayirBicme extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class OtToplama extends StatelessWidget {
   }
 }
 
-Widget _scaffold( BuildContext context, ProductList _products, int _itemindex ) =>Scaffold(
+Widget _scaffold( BuildContext context, ProductsList _products, int _itemindex ) =>Scaffold(
       drawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
@@ -69,14 +69,14 @@ Widget _scaffold( BuildContext context, ProductList _products, int _itemindex ) 
       ),
     );
 
-   Widget getWidgets(BuildContext context,ProductList _products, int _itemindex)
+   Widget getWidgets(BuildContext context,ProductsList _products, int _itemindex)
   {
 
     List<Widget> list = new List<Widget>();
 
     list.add(utility.headerText(_products.product[_itemindex].headerText));
     for(var item in _products.product[_itemindex].subProduct){ 
-       list.add(utility.urunlerWidget(context,  _products.product[_itemindex].url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
+       list.add(utility.urunlerWidget(context, item.url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
     }
     list.add(utility.imageAsset('images/FSon.jpg'));
 
