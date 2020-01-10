@@ -317,13 +317,13 @@ class Orkinos870 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Orkinos870/1.jpg', 'images/Orkinos870/2.jpg', 'images/Orkinos870/3.jpg', 'images/Orkinos870/4.jpg', 'images/Orkinos870/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "ORKİNOS 870",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 // Center(child: Text(pageID.toString())),
                 // Center(child: Text(name)),
@@ -400,13 +400,13 @@ class Orkinos1270 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Orkinos1270/1.jpg', 'images/Orkinos1270/2.jpg', 'images/Orkinos1270/3.jpg', 'images/Orkinos1270/4.jpg', 'images/Orkinos1270/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "ORKİNOS 1270",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(orkinos1270),
                 Text("Balya Yüksekliği: 70 cm"),
@@ -481,13 +481,14 @@ class SuperS8002 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/SuperS8002/1.jpg', 'images/SuperS8002/2.jpg', 'images/SuperS8002/3.jpg', 'images/SuperS8002/4.jpg', 'images/SuperS8002/5.jpg'),
+                //images/SuperS8002/6.jpg
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER S8002",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(supers8002),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -569,13 +570,14 @@ class SuperS8002E extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/SuperS8002E/1.jpg', 'images/SuperS8002E/2.jpg', 'images/SuperS8002E/3.jpg', 'images/SuperS8002E/4.jpg', 'images/SuperS8002E/5.jpg'),
+               //images/SuperS8002E/6.jpg
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER S8002 E",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(super8002E),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -585,7 +587,7 @@ class SuperS8002E extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/S8002E.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -657,13 +659,13 @@ class SuperS8002EDual1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Super8002EDUAL/1.jpg', 'images/Super8002EDUAL/2.jpg', 'images/Super8002EDUAL/3.jpg', 'images/Super8002EDUAL/4.jpg', 'images/Super8002EDUAL/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER 8002E DUAL",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(super8002EDual1),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -673,7 +675,7 @@ class SuperS8002EDual1 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/Super8002-1.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -745,13 +747,13 @@ class SuperS8002EDual2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Super8002EDUAL2/1.jpg', 'images/Super8002EDUAL2/2.jpg', 'images/Super8002EDUAL2/3.jpg', 'images/Super8002EDUAL2/4.jpg', 'images/Super8002EDUAL2/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER 8002E DUAL 2",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(super8002Dual2),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -761,7 +763,7 @@ class SuperS8002EDual2 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/Super-8002-E-DUAL-2.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -833,13 +835,14 @@ class SuperYunus extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/SuperYunus/1.jpg', 'images/SuperYunus/2.jpg', 'images/SuperYunus/3.jpg', 'images/SuperYunus/4.jpg', 'images/SuperYunus/5.jpg'),
+                //images/SuperYunus/6.jpg
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER YUNUS",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(superYunus),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -849,7 +852,7 @@ class SuperYunus extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/SuperYunus.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -921,13 +924,13 @@ class SuperYunus3Yabali extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/SuperYunus3Yabali/1.jpg', 'images/SuperYunus3Yabali/2.jpg', 'images/SuperYunus3Yabali/3.jpg', 'images/SuperYunus3Yabali/4.jpg', 'images/SuperYunus3Yabali/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER YUNUS 3 YABALI",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(superYunusYabali),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -937,7 +940,7 @@ class SuperYunus3Yabali extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/SuperYUNUS3ABALI.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -1010,13 +1013,13 @@ class SuperYunusDual1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/SuperYunusDual/1.jpg', 'images/SuperYunusDual/2.jpg', 'images/SuperYunusDual/3.jpg', 'images/SuperYunusDual/4.jpg', 'images/SuperYunusDual/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER YUNUS DUAL",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(superYunusDual1),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -1026,7 +1029,7 @@ class SuperYunusDual1 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/SuperYunusDual-1.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -1098,13 +1101,13 @@ class SuperYunusDual2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/SuperYunusDual2/1.jpg', 'images/SuperYunusDual2/2.jpg', 'images/SuperYunusDual2/3.jpg', 'images/SuperYunusDual2/4.jpg', 'images/SuperYunusDual2/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SÜPER YUNUS DUAL 2",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(superYunusDual2),
                 Text("Balya Ağırlığı / Saman: 20 – 25 kg"),
@@ -1114,7 +1117,7 @@ class SuperYunusDual2 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/SuperYunusDual2.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -1186,19 +1189,19 @@ class Hammer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Hammer/1.jpg', 'images/Hammer/2.jpg', 'images/Hammer/3.jpg', 'images/Hammer/4.jpg', 'images/Hammer/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "HAMMER",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(hammer),
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageAsset("images/Hammer.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -1270,13 +1273,13 @@ class Piranha extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Piranha/1.jpg', 'images/Piranha/2.jpg', 'images/Piranha/3.jpg', 'images/Piranha/1.jpg', 'images/Piranha/2.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "PİRANHA",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(piranha),
                 SizedBox(
@@ -1354,13 +1357,13 @@ class Pelican8m3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Pelican8m3/1.jpg', 'images/Pelican8m3/2.jpg', 'images/Pelican8m3/3.jpg', 'images/Pelican8m3/4.jpg', 'images/Pelican8m3/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "PELİCAN 8M3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(pelican8m3),
                 SizedBox(
@@ -1409,13 +1412,14 @@ class Pelican6M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Pelican6m3/1.jpg', 'images/Pelican6m3/2.jpg', 'images/Pelican6m3/3.jpg', 'images/Pelican6m3/4.jpg', 'images/Pelican6m3/5.jpg'),
+               //images/Pelican6m3/6.jpg
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "PELİCAN 6M3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(pelican6m3),
                 SizedBox(
@@ -1464,13 +1468,13 @@ class Pelican4M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Pelican4m3/1.jpg', 'images/Pelican4m3/2.jpg', 'images/Pelican4m3/3.jpg', 'images/Pelican4m3/4.jpg', 'images/Pelican4m3/5.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "PELİCAN 4M3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(pelican4m3),
                 SizedBox(
@@ -1538,13 +1542,13 @@ class Diamond3M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Diamond3m3/1.jpg', 'images/Diamond3m3/2.jpg', 'images/Diamond3m3/1.jpg', 'images/Diamond3m3/2.jpg', 'images/Diamond3m3/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "DIAMOND 3m3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(diamond3m3),
                 SizedBox(
@@ -1593,13 +1597,13 @@ class Diamond2M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Diamond2m3/1.jpg', 'images/Diamond2m3/2.jpg', 'images/Diamond2m3/1.jpg', 'images/Diamond2m3/2.jpg', 'images/Diamond2m3/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "DIAMOND 2m3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(diamond2m3),
                 SizedBox(
@@ -1648,13 +1652,13 @@ class Diamond15M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+                productDetailsIamages('images/Diamond1-5m3/1.jpg', 'images/Diamond1-5m3/2.jpg', 'images/Diamond1-5m3/1.jpg', 'images/Diamond1-5m3/2.jpg', 'images/Diamond1-5m3/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "DIAMOND 1.5m3",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(diamond15m3),
                 SizedBox(
@@ -1703,13 +1707,13 @@ class Scorpion extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "SCORPION SIRA BAĞIMSIZ SİLAJ BİÇER",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(scorpion),
                 SizedBox(
@@ -1755,13 +1759,13 @@ class Ahtapot extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Ahtapot/1.jpg', 'images/Ahtapot/2.jpg', 'images/Ahtapot/3.jpg', 'images/Ahtapot/4.jpg', 'images/Ahtapot/4.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "AHTAPOT SİLAJ PAKETLEME MAKİNASI",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(ahtapot),
                 SizedBox(
@@ -1809,13 +1813,13 @@ class Yengec extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Yengec/1.jpg', 'images/Yengec/2.jpg', 'images/Yengec/1.jpg', 'images/Yengec/2.jpg', 'images/Yengec/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "YENGEÇ ÇAYIR BİÇME",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(yengec),
                 SizedBox(
@@ -1885,13 +1889,13 @@ class Kirlangic extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(),
+               productDetailsIamages('images/Orkinos.jpg', 'images/ScorpionX.jpg', 'images/Yabali.jpg', 'images/PelicanYatay8m3.png', 'images/Diamond31.png'),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
                   "KIRLANGIÇ OT TOPLAMA MAKİNASI",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: _textstyle25,
                 ),
                 Text(kirlangic),
                 SizedBox(
@@ -2040,7 +2044,9 @@ DataRow _datarow2li(String t1, String t2) {
   ]);
 }
 
-SizedBox productDetailsIamages() {
+ final _textstyle25 = TextStyle(fontSize: 25, fontWeight: FontWeight.bold);
+
+SizedBox productDetailsIamages(String imageUrl1,String imageUrl2,String imageUrl3,String imageUrl4,String imageUrl5) {
   return SizedBox(
       height: 300.0,
       width: 325.0,
@@ -2054,14 +2060,17 @@ SizedBox productDetailsIamages() {
         dotIncreaseSize: 6,
         animationDuration: Duration(seconds: 3),
         images: [
-          // Image.asset('images/Orkinos.jpg'),
-          AssetImage(
-            'images/Orkinos.jpg',
-          ),
-          AssetImage('images/ScorpionX.jpg'),
-          AssetImage('images/Yabali.jpg'),
-          AssetImage("images/PelicanYatay8m3.png"),
-          AssetImage("images/Diamond31.png"),
+          AssetImage(imageUrl1),
+          AssetImage(imageUrl2),
+          AssetImage(imageUrl3),
+          AssetImage(imageUrl4),
+          AssetImage(imageUrl5),
+         
+          // AssetImage('images/Orkinos.jpg'),
+          // AssetImage('images/ScorpionX.jpg'),
+          // AssetImage('images/Yabali.jpg'),
+          // AssetImage("images/PelicanYatay8m3.png"),
+          // AssetImage("images/Diamond31.png"),
         ],
       ));
 }
