@@ -230,79 +230,7 @@ class Products extends StatelessWidget {
   }
 }
 
-// class ProductDetails extends StatelessWidget {
-//   final String productText;
-//   final String productDetailText;
-//   final String name;
 
-//   ProductDetails({this.productText, this.productDetailText, this.name});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       drawer: NewDrawer(),
-//       appBar: NewAppBar(),
-//       backgroundColor: Colors.white,
-//       body: Scrollbar(
-//         child: SingleChildScrollView(
-//           child: Column(
-//               mainAxisAlignment: MainAxisAlignment.start,
-//               crossAxisAlignment: CrossAxisAlignment.stretch,
-//               children: <Widget>[
-//                 productDetailsIamages(),
-//                 Text(
-//                 this.productText,
-//                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-//                 ),
-//                // Center(child: Text(pageID.toString())),
-//                 Center(child: Text(name)),
-//                 Text( productDetailText ),
-//                 Text("Balya Yüksekliği: 70 cm"),
-//                 Text("50 – 270 cm"),
-//                 SizedBox(
-//                   height: 20,
-//                 ),
-//                 imageAsset("images/Orkinos870.png"),
-//                 DataTable(
-//                   columnSpacing: 0,
-//                   columns:
-//                     _datacolumn("ÖZELLİKLER","4 İPLİ","4 İPLİ H","6 İPLİ","6 İPLİ H"),
-//                   rows: [
-//                     _datarow("Balya Genişliği", "80", "80", "120", "120"),
-//                     _datarow("Balya Yüksekliği", "50-260", "50-260", "50- 270", "50- 270"),
-//                     _datarow("Balya / Saat", "100", "130", "130", "150"),
-//                     _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
-//                     _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
-//                     _datarow("Dişli Aralığı", "61", "61", "61", "61"),
-//                     _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
-//                     _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
-//                     _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik", "4 Hidrolik"),
-//                     _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
-//                     _datarow("İp Sayısı", "4", "4", "6", "6"),
-//                     _datarow("İp Kapasitesi", "24", "24", "24", "24"),
-//                     _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
-//                     _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm", "Çift Düğüm"),
-//                     _datarow("Rotor", "Helisel Rotor", "Helisel Rotor", "Heliser Rotor", "Heliser Rotor"),
-//                     _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
-//                     _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik", "Hidrolik"),
-//                     _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
-//                     _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-//                     _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-//                     _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon", "Opsiyon"),
-//                     _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon", "70", "70"),
-//                     _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "70", "70"),
-
-//                   ],
-//                 )
-//                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-
-//                 // Image.asset('images/FSon.jpg'),
-//               ]),
-//         ),
-//       ),
-//     );
-//   }
-// }
 
 class Orkinos870 extends StatelessWidget {
   @override
@@ -317,7 +245,7 @@ class Orkinos870 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Orkinos870/1.jpg', 'images/Orkinos870/2.jpg', 'images/Orkinos870/3.jpg', 'images/Orkinos870/4.jpg', 'images/Orkinos870/5.jpg'),
+               productDetailsIamages4lu('images/Orkinos870/1.jpg', 'images/Orkinos870/2.jpg', 'images/Orkinos870/3.jpg', 'images/Orkinos870/4.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -400,7 +328,7 @@ class Orkinos1270 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Orkinos1270/1.jpg', 'images/Orkinos1270/2.jpg', 'images/Orkinos1270/3.jpg', 'images/Orkinos1270/4.jpg', 'images/Orkinos1270/5.jpg'),
+               productDetailsIamages4lu('images/Orkinos1270/1.jpg', 'images/Orkinos1270/2.jpg', 'images/Orkinos1270/3.jpg', 'images/Orkinos1270/4.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -481,8 +409,7 @@ class SuperS8002 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages('images/SuperS8002/1.jpg', 'images/SuperS8002/2.jpg', 'images/SuperS8002/3.jpg', 'images/SuperS8002/4.jpg', 'images/SuperS8002/5.jpg'),
-                //images/SuperS8002/6.jpg
+                productDetailsIamages6li('images/SuperS8002/1.jpg', 'images/SuperS8002/2.jpg', 'images/SuperS8002/3.jpg', 'images/SuperS8002/4.jpg', 'images/SuperS8002/5.jpg','images/SuperS8002/6.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -570,8 +497,8 @@ class SuperS8002E extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/SuperS8002E/1.jpg', 'images/SuperS8002E/2.jpg', 'images/SuperS8002E/3.jpg', 'images/SuperS8002E/4.jpg', 'images/SuperS8002E/5.jpg'),
-               //images/SuperS8002E/6.jpg
+               productDetailsIamages6li('images/SuperS8002E/1.jpg', 'images/SuperS8002E/2.jpg', 'images/SuperS8002E/3.jpg', 'images/SuperS8002E/4.jpg', 'images/SuperS8002E/5.jpg','images/SuperS8002E/6.jpg'),
+               
                 SizedBox(
                   height: 10,
                 ),
@@ -675,7 +602,7 @@ class SuperS8002EDual1 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Super8002-1.png"),
+                imageAsset("images/SuperS8002-1.png"),
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn4lu(
@@ -1273,7 +1200,7 @@ class Piranha extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Piranha/1.jpg', 'images/Piranha/2.jpg', 'images/Piranha/3.jpg', 'images/Piranha/1.jpg', 'images/Piranha/2.jpg'),
+               productDetailsIamages3lu('images/Piranha/1.jpg', 'images/Piranha/2.jpg','images/Piranha/3.jpg'), 
                 SizedBox(
                   height: 10,
                 ),
@@ -1542,7 +1469,7 @@ class Diamond3M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages('images/Diamond3m3/1.jpg', 'images/Diamond3m3/2.jpg', 'images/Diamond3m3/1.jpg', 'images/Diamond3m3/2.jpg', 'images/Diamond3m3/1.jpg'),
+                productDetailsIamages2li('images/Diamond3m3/1.jpg', 'images/Diamond3m3/2.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -1597,7 +1524,7 @@ class Diamond2M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages('images/Diamond2m3/1.jpg', 'images/Diamond2m3/2.jpg', 'images/Diamond2m3/1.jpg', 'images/Diamond2m3/2.jpg', 'images/Diamond2m3/1.jpg'),
+                productDetailsIamages2li('images/Diamond2m3/1.jpg', 'images/Diamond2m3/2.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -1652,7 +1579,7 @@ class Diamond15M3 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages('images/Diamond1-5m3/1.jpg', 'images/Diamond1-5m3/2.jpg', 'images/Diamond1-5m3/1.jpg', 'images/Diamond1-5m3/2.jpg', 'images/Diamond1-5m3/1.jpg'),
+                productDetailsIamages2li('images/Diamond1-5m3/1.jpg', 'images/Diamond1-5m3/2.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -1707,7 +1634,7 @@ class Scorpion extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg', 'images/Scorpion/1.jpg'),
+               productDetailsIamages2li('images/Scorpion/1.jpg', 'images/Scorpion/1.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -1759,7 +1686,7 @@ class Ahtapot extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Ahtapot/1.jpg', 'images/Ahtapot/2.jpg', 'images/Ahtapot/3.jpg', 'images/Ahtapot/4.jpg', 'images/Ahtapot/4.jpg'),
+               productDetailsIamages4lu('images/Ahtapot/1.jpg', 'images/Ahtapot/2.jpg', 'images/Ahtapot/3.jpg', 'images/Ahtapot/4.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -1813,7 +1740,7 @@ class Yengec extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               productDetailsIamages('images/Yengec/1.jpg', 'images/Yengec/2.jpg', 'images/Yengec/1.jpg', 'images/Yengec/2.jpg', 'images/Yengec/1.jpg'),
+               productDetailsIamages2li('images/Yengec/1.jpg', 'images/Yengec/2.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -2065,12 +1992,92 @@ SizedBox productDetailsIamages(String imageUrl1,String imageUrl2,String imageUrl
           AssetImage(imageUrl3),
           AssetImage(imageUrl4),
           AssetImage(imageUrl5),
-         
-          // AssetImage('images/Orkinos.jpg'),
-          // AssetImage('images/ScorpionX.jpg'),
-          // AssetImage('images/Yabali.jpg'),
-          // AssetImage("images/PelicanYatay8m3.png"),
-          // AssetImage("images/Diamond31.png"),
+        ],
+      ));
+}
+SizedBox productDetailsIamages6li(String imageUrl1,String imageUrl2,String imageUrl3,String imageUrl4,String imageUrl5,String imageUrl6) {
+  return SizedBox(
+      height: 300.0,
+      width: 325.0,
+      child: Carousel(
+        autoplay: true,
+        dotSize: 2,
+        borderRadius: true,
+        dotBgColor: Colors.white,
+        dotColor: Colors.grey,
+        dotIncreasedColor: Colors.red[300],
+        dotIncreaseSize: 6,
+        animationDuration: Duration(seconds: 3),
+        images: [
+          AssetImage(imageUrl1),
+          AssetImage(imageUrl2),
+          AssetImage(imageUrl3),
+          AssetImage(imageUrl4),
+          AssetImage(imageUrl5),
+           AssetImage(imageUrl6),
+        ],
+      ));
+}
+
+SizedBox productDetailsIamages2li(String imageUrl1,String imageUrl2) {
+  return SizedBox(
+      height: 300.0,
+      width: 325.0,
+      child: Carousel(
+        autoplay: true,
+        dotSize: 2,
+        borderRadius: true,
+        dotBgColor: Colors.white,
+        dotColor: Colors.grey,
+        dotIncreasedColor: Colors.red[300],
+        dotIncreaseSize: 6,
+        animationDuration: Duration(seconds: 3),
+        images: [
+          AssetImage(imageUrl1),
+          AssetImage(imageUrl2),
+        ],
+      ));
+}
+
+SizedBox productDetailsIamages4lu(String imageUrl1,String imageUrl2,String imageUrl3,String imageUrl4) {
+  return SizedBox(
+      height: 300.0,
+      width: 325.0,
+      child: Carousel(
+        autoplay: true,
+        dotSize: 2,
+        borderRadius: true,
+        dotBgColor: Colors.white,
+        dotColor: Colors.grey,
+        dotIncreasedColor: Colors.red[300],
+        dotIncreaseSize: 6,
+        animationDuration: Duration(seconds: 3),
+        images: [
+          AssetImage(imageUrl1),
+          AssetImage(imageUrl2),
+          AssetImage(imageUrl3),
+          AssetImage(imageUrl4),
+        ],
+      ));
+}
+
+SizedBox productDetailsIamages3lu(String imageUrl1,String imageUrl2,String imageUrl3) {
+  return SizedBox(
+      height: 300.0,
+      width: 325.0,
+      child: Carousel(
+        autoplay: true,
+        dotSize: 2,
+        borderRadius: true,
+        dotBgColor: Colors.white,
+        dotColor: Colors.grey,
+        dotIncreasedColor: Colors.red[300],
+        dotIncreaseSize: 6,
+        animationDuration: Duration(seconds: 3),
+        images: [
+          AssetImage(imageUrl1),
+          AssetImage(imageUrl2),
+          AssetImage(imageUrl3),
         ],
       ));
 }
