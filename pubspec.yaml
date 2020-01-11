@@ -28,6 +28,27 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - images/Ahtapot/
+    - images/Diamond1-5m3/
+    - images/Diamond2m3/
+    - images/Diamond3m3/
+    - images/Hammer/
+    - images/Orkinos870/
+    - images/Orkinos1270/
+    - images/Pelican4m3/
+    - images/Pelican6m3/
+    - images/Pelican8m3/
+    - images/Piranha/
+    - images/Scorpion/
+    - images/Super8002EDUAL/
+    - images/Super8002EDUAL/
+    - images/SuperS8002/
+    - images/SuperS8002E/
+    - images/SuperYunus/
+    - images/SuperYunus3Yabali/
+    - images/SuperYunusDual/
+    - images/SuperYunusDual2/
+    - images/Yengec/
   fonts:
   - family: Raleway
     fonts:
