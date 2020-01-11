@@ -30,7 +30,7 @@ Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
       alignment: Alignment.center,
     );
 
-Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3,);
+Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3, alignment: Alignment.bottomCenter,);
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
             Navigator.pushNamed(context, _url);
