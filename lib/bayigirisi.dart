@@ -4,7 +4,7 @@ import 'constants.dart';
 
 class BayiGirisi extends StatelessWidget {
   final TextEditingController sifre = new TextEditingController();
-  
+
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NewDrawer(),
@@ -19,19 +19,24 @@ class BayiGirisi extends StatelessWidget {
               children: <Widget>[
                 _textBayiGirisi(),
                 Container(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
                   child: Text(
                       'Bu içerik parola ile korunmaktadır. Görmek için lütfen aşağı parolanızı girin:'),
                 ),
                 Container(
                   child: TextField(
-                      controller: sifre,
-                      obscureText: true,
+                    controller: sifre,
+                    obscureText: true,
                     decoration: InputDecoration(
-                        fillColor: Colors.grey,
                         filled: true,
-                        border: InputBorder.none,
+                        fillColor: Colors.grey,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10.0),
+                          ),
+                          borderSide: BorderSide.none,
+                        ),
                         hintText: 'Şifrenizi Giriniz'),
-                        
                   ),
                 ),
                 Container(
@@ -41,7 +46,9 @@ class BayiGirisi extends StatelessWidget {
                     color: Color.fromARGB(180, 255, 116, 0),
                     textColor: Colors.white,
                     onPressed: () {
-                        sifre.text  == kBayiSifre ? Navigator.pushNamed(context, "/bayigirisipdf") : print('Şifre Yanlış');                       
+                      sifre.text == kBayiSifre
+                          ? Navigator.pushNamed(context, "/bayigirisipdf")
+                          : print('Şifre Yanlış');
                     },
                   ),
                 ),
