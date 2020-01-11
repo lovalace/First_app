@@ -79,6 +79,7 @@ Widget _scaffold( BuildContext context, ProductsList _products, int _itemindex )
        list.add(utility.urunlerWidget(context, item.url, item.imageUrl, item.productName,  _products.product[_itemindex].categoryName));
     }
     list.add(SizedBox(height: 100,));
+    
     list.add(utility.imageAsset('images/FSon.jpg'));
 
     return new Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
