@@ -264,46 +264,48 @@ class Orkinos870 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos870.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn(
-                      "ÖZELLİKLER", "4 İPLİ", "4 İPLİ H", "6 İPLİ", "6 İPLİ H"),
-                  rows: [
-                    _datarow("Balya Genişliği", "80", "80", "120", "120"),
-                    _datarow("Balya Yüksekliği", "50-260", "50-260", "50- 270",
-                        "50- 270"),
-                    _datarow("Balya / Saat", "100", "130", "130", "150"),
-                    _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
-                    _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
-                    _datarow("Dişli Aralığı", "61", "61", "61", "61"),
-                    _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
-                    _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
-                    _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik",
-                        "4 Hidrolik", "4 Hidrolik"),
-                    _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
-                    _datarow("İp Sayısı", "4", "4", "6", "6"),
-                    _datarow("İp Kapasitesi", "24", "24", "24", "24"),
-                    _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan",
-                        "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
-                    _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm",
-                        "Çift Düğüm", "Çift Düğüm"),
-                    _datarow("Rotor", "Helisel Rotor", "Helisel Rotor",
-                        "Heliser Rotor", "Heliser Rotor"),
-                    _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
-                    _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik",
-                        "Hidrolik"),
-                    _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
-                    _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon",
-                        "Standart", "Standart"),
-                    _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "Standart",
-                        "Standart"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn(
+                        "ÖZELLİKLER", "4 İPLİ", "4 İPLİ H", "6 İPLİ", "6 İPLİ H"),
+                    rows: [
+                      _datarow("Balya Genişliği", "80", "80", "120", "120"),
+                      _datarow("Balya Yüksekliği", "50-260", "50-260", "50- 270",
+                          "50- 270"),
+                      _datarow("Balya / Saat", "100", "130", "130", "150"),
+                      _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
+                      _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
+                      _datarow("Dişli Aralığı", "61", "61", "61", "61"),
+                      _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
+                      _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
+                      _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik",
+                          "4 Hidrolik", "4 Hidrolik"),
+                      _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
+                      _datarow("İp Sayısı", "4", "4", "6", "6"),
+                      _datarow("İp Kapasitesi", "24", "24", "24", "24"),
+                      _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan",
+                          "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
+                      _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm",
+                          "Çift Düğüm", "Çift Düğüm"),
+                      _datarow("Rotor", "Helisel Rotor", "Helisel Rotor",
+                          "Heliser Rotor", "Heliser Rotor"),
+                      _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
+                      _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik",
+                          "Hidrolik"),
+                      _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
+                      _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon",
+                          "Standart", "Standart"),
+                      _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "Standart",
+                          "Standart"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
 
@@ -349,47 +351,49 @@ class Orkinos1270 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn(
-                      "ÖZELLİKLER", "4 İPLİ", "4 İPLİ H", "6 İPLİ", "6 İPLİ H"),
-                  rows: [
-                    _datarow("Balya Genişliği", "80", "80", "120", "120"),
-                    _datarow("Balya Yüksekliği", "70", "70", "70", "70"),
-                    _datarow("Balya Uzunluğu", "50-260", "50-260", "50- 270",
-                        "50- 270"),
-                    _datarow("Balya / Saat", "100", "130", "130", "150"),
-                    _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
-                    _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
-                    _datarow("Dişli Aralığı", "61", "61", "61", "61"),
-                    _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
-                    _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
-                    _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik",
-                        "4 Hidrolik", "4 Hidrolik"),
-                    _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
-                    _datarow("İp Sayısı", "4", "4", "6", "6"),
-                    _datarow("İp Kapasitesi", "24", "24", "24", "24"),
-                    _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan",
-                        "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
-                    _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm",
-                        "Çift Düğüm", "Çift Düğüm"),
-                    _datarow("Rotor", "Helisel Rotor", "Helisel Rotor",
-                        "Heliser Rotor", "Heliser Rotor"),
-                    _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
-                    _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik",
-                        "Hidrolik"),
-                    _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
-                    _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                    _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon",
-                        "Standart", "Standart"),
-                    _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "Standart",
-                        "Standart"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn(
+                        "ÖZELLİKLER", "4 İPLİ", "4 İPLİ H", "6 İPLİ", "6 İPLİ H"),
+                    rows: [
+                      _datarow("Balya Genişliği", "80", "80", "120", "120"),
+                      _datarow("Balya Yüksekliği", "70", "70", "70", "70"),
+                      _datarow("Balya Uzunluğu", "50-260", "50-260", "50- 270",
+                          "50- 270"),
+                      _datarow("Balya / Saat", "100", "130", "130", "150"),
+                      _datarow("Tırmık Genişliği", "190", "190", "230", "230"),
+                      _datarow("Toplayıcı Dişli Sayısı", "4", "4", "4", "4"),
+                      _datarow("Dişli Aralığı", "61", "61", "61", "61"),
+                      _datarow("Piston Vuruşu / dk", "51", "51", "51", "51"),
+                      _datarow("Piston Vuruşu / cm", "750", "750", "750", "750"),
+                      _datarow("Yoğunluk Kontrolü", "4 Hidrolik", "4 Hidrolik",
+                          "4 Hidrolik", "4 Hidrolik"),
+                      _datarow("Balya Odası Uzunluğu", "3", "3", "3", "3"),
+                      _datarow("İp Sayısı", "4", "4", "6", "6"),
+                      _datarow("İp Kapasitesi", "24", "24", "24", "24"),
+                      _datarow("Bağlama Gurubu Temizleme", "Elektrikli Fan",
+                          "Elektrikli Fan", "Elektrikli Fan", "Elektrikli Fan"),
+                      _datarow("Bağlama Sistemi", "Çift Düğüm", "Çift Düğüm",
+                          "Çift Düğüm", "Çift Düğüm"),
+                      _datarow("Rotor", "Helisel Rotor", "Helisel Rotor",
+                          "Heliser Rotor", "Heliser Rotor"),
+                      _datarow("PTO Gereksinimi", "1000", "1000", "1000", "1000"),
+                      _datarow("Fren Sistemi", "Hidrolik", "Hidrolik", "Hidrolik",
+                          "Hidrolik"),
+                      _datarow("Bıçak Sayısı", "Yok", "15", "Yok", "25"),
+                      _datarow("Komprosör", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Tartı Sistemi", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Nem Ölçer", "Opsiyon", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                      _datarow("Otomatik Yağlama", "Opsiyon", "Opsiyon",
+                          "Standart", "Standart"),
+                      _datarow("Çift Dingil", "Opsiyon", "Opsiyon", "Standart",
+                          "Standart"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -438,52 +442,54 @@ class SuperS8002 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -533,52 +539,54 @@ class SuperS8002E extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/S8002E.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -626,52 +634,54 @@ class SuperS8002EDual1 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/SuperS8002-1.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -719,52 +729,54 @@ class SuperS8002EDual2 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Super-8002-E-DUAL-2.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -813,52 +825,54 @@ class SuperYunus extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/SuperYunus.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -906,52 +920,54 @@ class SuperYunus3Yabali extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/SuperYUNUS3ABALI.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -1000,52 +1016,54 @@ class SuperYunusDual1 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/SuperYunusDual-1.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -1093,52 +1111,54 @@ class SuperYunusDual2 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/SuperYunusDual2.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -1182,52 +1202,54 @@ class Hammer extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Hammer.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -1267,52 +1289,54 @@ class Piranha extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
-                  rows: [
-                    _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
-                    _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
-                        "20 - 25 kg", "20 - 25 kg"),
-                    _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
-                        "25 - 35 kg", "25 - 35 kg"),
-                    _datarow4lu(
-                        "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
-                    _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
-                    _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu(
-                        "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
-                    _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
-                    _datarow4lu(
-                        "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
-                    _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
-                        "73cm - 92 rpm", "73cm - 92 rpm"),
-                    _datarow4lu(
-                        "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
-                    _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
-                    _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
-                    _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
-                        "Standart", "Standart"),
-                    _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu(
-                        "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
-                    _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu(
-                        "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
-                    _datarow4lu(
-                        "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
-                    _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
-                        "Zincir", "Zincir"),
-                    _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
-                    _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
-                        "Standart"),
-                    _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
-                        "Opsiyon"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "ÖZELLİKLER", "2 İPLİ", "3 İPLİ", "3 İPLİ H"),
+                    rows: [
+                      _datarow4lu("Traktör Gücü", "50-60", "50-60", "55-70"),
+                      _datarow4lu("Balya Ağırlığı - Saman", "20 - 25 kg",
+                          "20 - 25 kg", "20 - 25 kg"),
+                      _datarow4lu("Balya Ağırlığı - Ot", "25 - 35 kg",
+                          "25 - 35 kg", "25 - 35 kg"),
+                      _datarow4lu(
+                          "Balya / Saat", "250 - 350", "250 - 350", "250 - 350"),
+                      _datarow4lu("Tırmık Genişliği", "142", "142", "142"),
+                      _datarow4lu("Hidrolik Toplayıcı Pistonu", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu(
+                          "3. Destek Tekerİ", "Opsiyon", "Opsiyon", "Opsiyon"),
+                      _datarow4lu("Haşpay Ünütesi", "Yok", "Yok", "Var"),
+                      _datarow4lu(
+                          "Balya Ölçüsü", "36 x 46", "36 x 46", "36 x 46"),
+                      _datarow4lu("Strok Boyu ve Hızı", "65cm - 92 rpm",
+                          "73cm - 92 rpm", "73cm - 92 rpm"),
+                      _datarow4lu(
+                          "Kuyruk Tipi", "212CStandart", "Standart", "Standart"),
+                      _datarow4lu("Bağlama Gurubu", "2 İpli", "3 İpli", "3 İpli"),
+                      _datarow4lu("Telli Bağlama Grubu", "Opsiyon", "Yok", "Yok"),
+                      _datarow4lu("Bağlama Grubu Aydınlatması", "Standart",
+                          "Standart", "Standart"),
+                      _datarow4lu("Bağlama Grubu Fanı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu(
+                          "İş-Yol Konumu", "Hidrolik", "Hidrolik", "Hidrolik"),
+                      _datarow4lu("Bağlama Sistemi Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu(
+                          "Sol Yaba Güç Aktarımı", "Şaft", "Şaft", "Şaft"),
+                      _datarow4lu(
+                          "Sağ Yaba Güç Aktarımı", "Zincir", "Zincir", "Zincir"),
+                      _datarow4lu("Toplayıcı Düzeneği Güç Aktarımı", "Zincir",
+                          "Zincir", "Zincir"),
+                      _datarow4lu("İp Dolabı Kapasitesi", "6", "6", "6"),
+                      _datarow4lu("Mekanik Balya Sayıcı", "Standart", "Standart",
+                          "Standart"),
+                      _datarow4lu("Dijital Balya Sayıcı", "Opsiyon", "Opsiyon",
+                          "Opsiyon"),
+                    ],
+                  ),
                 ),
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
@@ -1356,13 +1380,15 @@ class Pelican8m3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("PELICAN", "8 m3", "134", "Çift"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("PELICAN", "8 m3", "134", "Çift"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1417,13 +1443,15 @@ class Pelican6M3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("PELICAN", "6 m3", "134", "Çift"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("PELICAN", "6 m3", "134", "Çift"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1477,13 +1505,15 @@ class Pelican4M3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("PELICAN", "4 m3", "55", "Tek"),
-                  ],
+                FittedBox(
+                                  child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("PELICAN", "4 m3", "55", "Tek"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1496,13 +1526,15 @@ class Pelican4M3 extends StatelessWidget {
                     _datarow2li("Yükseklik", "2025"),
                   ],
                 ),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("PELICAN", "4 m3", "122", "Çift"),
-                  ],
+                FittedBox(
+                    child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("PELICAN", "4 m3", "122", "Çift"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1552,13 +1584,15 @@ class Diamond3M3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("DIAMOND", "3 m3", "7", "1"),
-                  ],
+                FittedBox(
+                    child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("DIAMOND", "3 m3", "7", "1"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1608,25 +1642,29 @@ class Diamond2M3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("DIAMOND", "2 m3", "6", "1"),
-                  ],
+                FittedBox(
+                    child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("DIAMOND", "2 m3", "6", "1"),
+                    ],
+                  ),
                 ),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn2li("TARTI SİSTEMİ", "Opsiyonel"),
-                  rows: [
-                    _datarow2li("ELEKTRİK SİSTEMİ", "Opsiyonel"),
-                    _datarow2li("Uzunluk", "4200"),
-                    _datarow2li("Ağırlık", "1100"),
-                    _datarow2li("Genişlik", "1600"),
-                    _datarow2li("Yükseklik", "2400"),
-                  ],
-                ),
+           
+               DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn2li("TARTI SİSTEMİ", "Opsiyonel"),
+                    rows: [
+                      _datarow2li("ELEKTRİK SİSTEMİ", "Opsiyonel"),
+                      _datarow2li("Uzunluk", "4200"),
+                      _datarow2li("Ağırlık", "1100"),
+                      _datarow2li("Genişlik", "1600"),
+                      _datarow2li("Yükseklik", "2400"),
+                    ],
+                  ),
+              
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
               ]),
@@ -1664,13 +1702,15 @@ class Diamond15M3 extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu(
-                      "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
-                  rows: [
-                    _datarow4lu("DIAMOND", "1,5 m3", "6", "1"),
-                  ],
+                FittedBox(
+                     child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu(
+                        "MODEL", "KAPASİTE", "BIÇAK SAYISI", "HELEZON SAYISI"),
+                    rows: [
+                      _datarow4lu("DIAMOND", "1,5 m3", "6", "1"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
@@ -1721,7 +1761,9 @@ class Scorpion extends StatelessWidget {
                 ),
                 imageAsset("images/Orkinos1270.png"),
                 FittedBox(
+
                   child: DataTable(
+
                     columnSpacing: 0,
                     columns: _datacolumn4lu(
                         "MODEL", "KAPASİTE", "TRAKTÖR GÜCÜ", "KUYRUK MİL HIZI"),
@@ -1730,6 +1772,7 @@ class Scorpion extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 DataTable(
                   columnSpacing: 0,
                   columns: _datacolumn2li("Uzunluk", "510 cm"),
@@ -1738,6 +1781,7 @@ class Scorpion extends StatelessWidget {
                     _datarow2li("Genişlik", "325 cm"),
                   ],
                 ),
+
                 //Text("Genel Bilgi",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 Image.asset('images/FSon.jpg'),
               ]),
@@ -1778,12 +1822,14 @@ class Ahtapot extends StatelessWidget {
                   height: 20,
                 ),
                 imageAsset("images/Orkinos1270.png"),
-                DataTable(
-                  columnSpacing: 0,
-                  columns: _datacolumn4lu("MODEL", "SAAT", "STREÇ ADETİ", "KW"),
-                  rows: [
-                    _datarow4lu("AHTAPOD", "30-40 ad.", "3", "1000 Rpm"),
-                  ],
+                FittedBox(
+                           child: DataTable(
+                    columnSpacing: 0,
+                    columns: _datacolumn4lu("MODEL", "SAAT", "STREÇ ADETİ", "KW"),
+                    rows: [
+                      _datarow4lu("AHTAPOD", "30-40 ad.", "3", "1000 Rpm"),
+                    ],
+                  ),
                 ),
                 DataTable(
                   columnSpacing: 0,
