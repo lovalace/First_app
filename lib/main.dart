@@ -26,7 +26,7 @@ import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmedigerurunlerimiz.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesupers8002.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesuperyunus.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmeyemkarma.dart';
-import 'package:first_app/deneme01.dart';
+// import 'package:first_app/deneme01.dart';
 
 void main() {
   runApp(MaterialApp(
