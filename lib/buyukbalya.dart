@@ -81,8 +81,8 @@ Widget _scaffold( BuildContext context, ProductsList _products, int _itemindex )
 
 
     list.add(SizedBox(height: 100,));
-    
-    list.add(utility.imageAsset('images/FSon.jpg'));
+    //Image.network("http://www.paksanmakina.com.tr/wp-content/uploads/2019/01/FSon.jpg");
+    list.add(utility.imageNetwork('http://www.paksanmakina.com.tr/wp-content/uploads/2019/01/FSon.jpg'));
 
 
     return new Column(children: list, crossAxisAlignment: CrossAxisAlignment.stretch,);
