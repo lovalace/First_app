@@ -31,6 +31,7 @@ Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
     );
 
 Widget imageAsset( String _url  ) => Image.asset( _url, scale: 3, alignment: Alignment.bottomCenter,);
+Widget imageNetwork( String url ) => Image.network("http://www.paksanmakina.com.tr/wp-content/uploads/2019/01/FSon.jpg");
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
             Navigator.pushNamed(context, _url);

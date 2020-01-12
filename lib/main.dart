@@ -26,6 +26,7 @@ import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmedigerurunlerimiz.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesupers8002.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesuperyunus.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmeyemkarma.dart';
+import 'package:first_app/deneme01.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -93,6 +94,7 @@ void main() {
       "/Ahtapot": (context) => Ahtapot(),
       "/Yengec": (context) => Yengec(),
       "/Kirlangic": (context) => Kirlangic(),
+     // "/deneme01": (context) => Deneme01(),
     },
   ));
 }
@@ -111,7 +113,8 @@ class NewDrawer extends StatelessWidget {
           _listTile(context, "BAYİ GİRİŞİ", "/bayigirisi"),
           _listTile(context, "KİŞİSEL VERİLERİN KORUNMASI", "/kvkk"),
           _listTile(context, "KALİTE POLİTİKAMIZ", "/kalite"),
-          _listTile(context, "İLETİŞİM", "/iletisim")
+          _listTile(context, "İLETİŞİM", "/iletisim"),
+        //  _listTile(context, "deneme01", "/deneme01")
         ],
       ),
     );
