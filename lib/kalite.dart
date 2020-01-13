@@ -4,7 +4,8 @@ import 'package:first_app/main.dart';
 class Kalite extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
+      //drawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(

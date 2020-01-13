@@ -6,7 +6,8 @@ import 'iletisim.dart';
 class NewsFromUs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -87,14 +88,14 @@ class NewsFromUs extends StatelessWidget {
         Container(
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(00, 385, 00, 15),
-          child: RaisedButton(
-            child: Text("DEVAMINI OKU"),
-            color: Color.fromARGB(180, 255, 116, 0),
-            textColor: Colors.white,
-            onPressed: () {
-              LaunchUrl(url: kUrlLink1).launchURL();
-            },
-          ),
+          // child: RaisedButton(
+          //   child: Text("DEVAMINI OKU"),
+          //   color: Color.fromARGB(180, 255, 116, 0),
+          //   textColor: Colors.white,
+          //   onPressed: () {
+          //     LaunchUrl(url: kUrlLink1).launchURL();
+          //   },
+          // ),
         ),
       ],
     );
@@ -141,14 +142,14 @@ class NewsFromUs extends StatelessWidget {
         Container(
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(00, 375, 00, 15),
-          child: RaisedButton(
-            child: Text("DEVAMINI OKU"),
-            color: Color.fromARGB(180, 255, 116, 0),
-            textColor: Colors.white,
-            onPressed: () {
-              LaunchUrl(url: kUrlLink2).launchURL();
-            },
-          ),
+          // child: RaisedButton(
+          //   child: Text("DEVAMINI OKU"),
+          //   color: Color.fromARGB(180, 255, 116, 0),
+          //   textColor: Colors.white,
+          //   onPressed: () {
+          //     LaunchUrl(url: kUrlLink2).launchURL();
+          //   },
+          // ),
         ),
       ],
     );
@@ -195,14 +196,14 @@ class NewsFromUs extends StatelessWidget {
         Container(
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(00, 395, 00, 15),
-          child: RaisedButton(
-            child: Text("DEVAMINI OKU"),
-            color: Color.fromARGB(180, 255, 116, 0),
-            textColor: Colors.white,
-            onPressed: () {
-              LaunchUrl(url: kUrlLink3).launchURL();
-            },
-          ),
+          // child: RaisedButton(
+          //   child: Text("DEVAMINI OKU"),
+          //   color: Color.fromARGB(180, 255, 116, 0),
+          //   textColor: Colors.white,
+          //   onPressed: () {
+          //     LaunchUrl(url: kUrlLink3).launchURL();
+          //   },
+          // ),
         ),
       ],
     );

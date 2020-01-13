@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:first_app/settings.dart';
 import 'package:first_app/home.dart';
@@ -26,7 +28,6 @@ import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmedigerurunlerimiz.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesupers8002.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmesuperyunus.dart';
 import 'ZiraiKredilendirmeBelgeleri/ziraikredilendirmeyemkarma.dart';
-// import 'package:first_app/deneme01.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -94,7 +95,8 @@ void main() {
       "/Ahtapot": (context) => Ahtapot(),
       "/Yengec": (context) => Yengec(),
       "/Kirlangic": (context) => Kirlangic(),
-     // "/deneme01": (context) => Deneme01(),
+      "/Piranha": (context) =>Piranha(),
+      "/Hammer":(context)=>Hammer(),
     },
   ));
 }
@@ -102,22 +104,21 @@ void main() {
 class NewDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[
-          _safeArea,
-          _listTile(context, "ANASAYFA", "/"),
-          _listTile(context, "HAKKIMIZDA", "/aboutus"),
-          _listTile(context, "ÜRÜNLER", "/products"),
-          _listTile(context, "BİZDEN HABERLER", "/newsfromus"),
-          _listTile(context, "BAYİ GİRİŞİ", "/bayigirisi"),
-          _listTile(context, "KİŞİSEL VERİLERİN KORUNMASI", "/kvkk"),
-          _listTile(context, "KALİTE POLİTİKAMIZ", "/kalite"),
-          _listTile(context, "İLETİŞİM", "/iletisim"),
-        //  _listTile(context, "deneme01", "/deneme01")
-        ],
-      ),
-    );
+        child: ListView(
+    padding: EdgeInsets.zero,
+    children: <Widget>[
+      _safeArea,
+      _listTile(context, "ANASAYFA", "/"),
+      _listTile(context, "HAKKIMIZDA", "/aboutus"),
+      _listTile(context, "ÜRÜNLER", "/products"),
+      _listTile(context, "BİZDEN HABERLER", "/newsfromus"),
+      _listTile(context, "BAYİ GİRİŞİ", "/bayigirisi"),
+      _listTile(context, "KİŞİSEL VERİLERİN KORUNMASI", "/kvkk"),
+      _listTile(context, "KALİTE POLİTİKAMIZ", "/kalite"),
+      _listTile(context, "İLETİŞİM", "/iletisim"),
+    ],
+        ),
+      );
   }
 }
 
@@ -148,13 +149,24 @@ class NewAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Image.asset(
-        'images/PAKSAN.png',
-        scale: 1.7,
-      ),
-      centerTitle: true,
-      backgroundColor: Colors.grey[300],
-    );
+      leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+          var aa =  context.owner.toString();
+                Navigator.pop(context);
+                // if(context.widget.)
+                // Navigator.push(context,
+                //     new MaterialPageRoute(builder: (context) => new Home()));
+              },
+          
+          ),
+        title: Image.asset(
+    'images/PAKSAN.png',
+    scale: 1.7,
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.grey[300],
+      );
   }
 
   @override
