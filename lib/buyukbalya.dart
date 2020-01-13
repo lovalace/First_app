@@ -53,7 +53,8 @@ class OtToplama extends StatelessWidget {
 }
 
 Widget _scaffold( BuildContext context, ProductsList _products, int _itemindex ) =>Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(

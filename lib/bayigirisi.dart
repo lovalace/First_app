@@ -7,7 +7,8 @@ class BayiGirisi extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(

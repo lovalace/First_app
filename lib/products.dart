@@ -7,7 +7,8 @@ import 'package:carousel_pro/carousel_pro.dart';
 class Products extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -234,7 +235,8 @@ class Orkinos870 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+     endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -323,7 +325,8 @@ class Orkinos1270 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -410,7 +413,8 @@ class SuperS8002 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -506,7 +510,8 @@ class SuperS8002E extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -603,7 +608,8 @@ class SuperS8002EDual1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -698,7 +704,8 @@ class SuperS8002EDual2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -793,7 +800,8 @@ class SuperYunus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -889,7 +897,8 @@ class SuperYunus3Yabali extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -985,7 +994,8 @@ class SuperYunusDual1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1080,7 +1090,8 @@ class SuperYunusDual2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1175,7 +1186,8 @@ class Hammer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1266,7 +1278,8 @@ class Piranha extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1353,7 +1366,8 @@ class Pelican8m3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1415,7 +1429,8 @@ class Pelican6M3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1478,7 +1493,8 @@ class Pelican4M3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1561,7 +1577,8 @@ class Diamond3M3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1619,7 +1636,8 @@ class Diamond2M3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      //drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1679,7 +1697,8 @@ class Diamond15M3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1737,7 +1756,8 @@ class Scorpion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1796,7 +1816,8 @@ class Ahtapot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+    //  drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1856,7 +1877,8 @@ class Yengec extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(
@@ -1933,7 +1955,8 @@ class Kirlangic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+     // drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: Scrollbar(

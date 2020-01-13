@@ -28,7 +28,7 @@ flutter_icons:
   android: true
   ios: true
   image_path: "images/paksanlauncher.png"
-  adaptive_icon_background: "#191919"
+  adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "images/paksanlauncher.png"
 
 
@@ -58,6 +58,7 @@ flutter:
     - images/SuperYunusDual/
     - images/SuperYunusDual2/
     - images/Yengec/
+    - images/SubProduct/
   fonts:
   - family: Raleway
     fonts:
