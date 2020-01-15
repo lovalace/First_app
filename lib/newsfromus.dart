@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
-import 'constants.dart';
-import 'iletisim.dart';
+// import 'constants.dart';
+// import 'iletisim.dart';
 
 class NewsFromUs extends StatelessWidget {
   Widget build(BuildContext context) {

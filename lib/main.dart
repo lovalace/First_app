@@ -152,7 +152,7 @@ class NewAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-          var aa =  context.owner.toString();
+          // var aa =  context.owner.toString();
                 Navigator.pop(context);
                 // if(context.widget.)
                 // Navigator.push(context,
@@ -160,6 +160,33 @@ class NewAppBar extends StatelessWidget implements PreferredSizeWidget {
               },
           
           ),
+        title: Image.asset(
+    'images/PAKSAN.png',
+    scale: 1.7,
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.grey[300],
+      );
+  }
+
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+}
+class NewAppBarNoBack extends StatelessWidget implements PreferredSizeWidget {
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      // leading: IconButton(
+      //     icon: Icon(Icons.arrow_back),
+      //     onPressed: () {
+      //     // var aa =  context.owner.toString();
+      //           Navigator.pop(context);
+      //           // if(context.widget.)
+      //           // Navigator.push(context,
+      //           //     new MaterialPageRoute(builder: (context) => new Home()));
+      //         },
+          
+      //     ),
         title: Image.asset(
     'images/PAKSAN.png',
     scale: 1.7,

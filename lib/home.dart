@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
       //drawer: NewDrawer(),
       key: new Key("home"),
       endDrawer: NewDrawer(),
-      appBar: NewAppBar(),
+      appBar: NewAppBarNoBack(),
       body: Scrollbar(
         child: SingleChildScrollView(
           child: Column(
