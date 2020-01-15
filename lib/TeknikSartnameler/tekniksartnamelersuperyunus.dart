@@ -3,10 +3,12 @@ import 'package:first_app/main.dart';
 import 'package:first_app/pdfviewPage.dart';
 import 'package:first_app/constants.dart';
 
+import '../utility.dart';
+
 class TeknikSartnamelerSuperYunusBalyaMakinesi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -17,41 +19,46 @@ class TeknikSartnamelerSuperYunusBalyaMakinesi extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textTSYunus(kTextTSYunus),
-                buttonTSYunus(
-                    kButton1TextTSYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYunus1,
-                        pdfAssetNamed: assetPDFTSYunus1,
-                        pdfName: kPdfTSYunus1)),
-                buttonTSYunus(
-                    kButton2TextTSYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYunus2,
-                        pdfAssetNamed: assetPDFTSYunus2,
-                        pdfName: kPdfTSYunus2)),
-                buttonTSYunus(
-                    kButton3TextTSYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYunus3,
-                        pdfAssetNamed: assetPDFTSYunus3,
-                        pdfName: kPdfTSYunus3)),
-                buttonTSYunus(
-                    kButton4TextTSYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYunus4,
-                        pdfAssetNamed: assetPDFTSYunus4,
-                        pdfName: kPdfTSYunus4)),
-                buttonTSYunus(
-                    kButton5TextTSYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYunus5,
-                        pdfAssetNamed: assetPDFTSYunus5,
-                        pdfName: kPdfTSYunus5)),
+                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextTSYunus),
+                  pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextTSYunus),
+                   pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextTSYunus),
+                    pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextTSYunus),
+                     pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton5TextTSYunus),
+                // buttonTSYunus(
+                //     kButton1TextTSYunus,
+                //     () => _pdfAc(
+                //         context: context,
+                //         pdfAsset: kPdfAssetTSYunus1,
+                //         pdfAssetNamed: assetPDFTSYunus1,
+                //         pdfName: kPdfTSYunus1)),
+                // buttonTSYunus(
+                //     kButton2TextTSYunus,
+                //     () => _pdfAc(
+                //         context: context,
+                //         pdfAsset: kPdfAssetTSYunus2,
+                //         pdfAssetNamed: assetPDFTSYunus2,
+                //         pdfName: kPdfTSYunus2)),
+                // buttonTSYunus(
+                //     kButton3TextTSYunus,
+                //     () => _pdfAc(
+                //         context: context,
+                //         pdfAsset: kPdfAssetTSYunus3,
+                //         pdfAssetNamed: assetPDFTSYunus3,
+                //         pdfName: kPdfTSYunus3)),
+                // buttonTSYunus(
+                //     kButton4TextTSYunus,
+                //     () => _pdfAc(
+                //         context: context,
+                //         pdfAsset: kPdfAssetTSYunus4,
+                //         pdfAssetNamed: assetPDFTSYunus4,
+                //         pdfName: kPdfTSYunus4)),
+                // buttonTSYunus(
+                //     kButton5TextTSYunus,
+                //     () => _pdfAc(
+                //         context: context,
+                //         pdfAsset: kPdfAssetTSYunus5,
+                //         pdfAssetNamed: assetPDFTSYunus5,
+                //         pdfName: kPdfTSYunus5)),
               ],
             ),
           ),
