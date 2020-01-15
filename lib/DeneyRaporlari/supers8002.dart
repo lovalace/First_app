@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 import 'package:first_app/constants.dart';
 import 'package:first_app/pdfviewPage.dart';
+import 'package:first_app/kvkk.dart';
 
 class DeneyRaporlariSuper8002 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -16,49 +17,15 @@ class DeneyRaporlariSuper8002 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                _textS8002(ktextSuper8002),
-                buttonS8002(
-                    kButton1TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_1,
-                        pdfAssetNamed: assetPDFS8002_1,
-                        pdfName: kPdfS8002_1)),
-                buttonS8002(
-                    kButton2TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_2,
-                        pdfAssetNamed: assetPDFS8002_2,
-                        pdfName: kPdfS8002_2)),
-                buttonS8002(
-                    kButton3TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_3,
-                        pdfAssetNamed: assetPDFS8002_3,
-                        pdfName: kPdfS8002_3)),
-                buttonS8002(
-                    kButton4TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_4,
-                        pdfAssetNamed: assetPDFS8002_4,
-                        pdfName: kPdfS8002_4)),
-                buttonS8002(
-                    kButton5TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_5,
-                        pdfAssetNamed: assetPDFS8002_5,
-                        pdfName: kPdfS8002_5)),
-                buttonS8002(
-                    kButton6TextSuper8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetS8002_6,
-                        pdfAssetNamed: assetPDFS8002_6,
-                        pdfName: kPdfS8002_6)),
+                 _textS8002(ktextSuper8002),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', ktextSuper8002),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton1TextSuper8002),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton2TextSuper8002,),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton3TextSuper8002,),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton4TextSuper8002,),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton5TextSuper8002,),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton6TextSuper8002,),    
+
               ],
             ),
           ),
@@ -66,6 +33,23 @@ class DeneyRaporlariSuper8002 extends StatelessWidget {
       ),
     );
   }
+
+RaisedButton pdfbutton( String url, String text ) {
+    return RaisedButton(
+      color: Colors.white,
+      child: Align(
+        alignment: Alignment.centerLeft,
+          child:
+           RichText(
+                text: new LinkTextSpan(
+                    style: TextStyle(color: Colors.red),
+                    url: url,
+                    text:  text),
+                ),
+      ), onPressed: () {}, 
+    );
+  }
+
 
   RaisedButton buttonS8002(String buttonText, Function function) {
     return RaisedButton(

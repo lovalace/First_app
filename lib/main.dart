@@ -41,7 +41,7 @@ void main() {
       "/products": (context) => Products(),
       "/newsfromus": (context) => NewsFromUs(),
       "/bayigirisi": (context) => BayiGirisi(),
-      "/kvkk": (context) => Kvkk(),
+      "/kvkk": (context) => Deneme01(),
       "/kalite": (context) => Kalite(),
       "/iletisim": (context) => Iletisim(),
       "/buyukbalya": (context) => BuyukBalya(),

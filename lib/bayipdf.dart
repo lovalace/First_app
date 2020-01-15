@@ -3,6 +3,8 @@ import 'package:first_app/main.dart';
 import 'constants.dart';
 import 'package:first_app/pdfviewPage.dart';
 
+import 'kvkk.dart';
+
 class BayiGirisiPdf extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,10 +31,11 @@ class BayiGirisiPdf extends StatelessWidget {
       ),
     );
   }
+  
 
   RaisedButton buttonDeneyRaporlari(context) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -47,7 +50,7 @@ class BayiGirisiPdf extends StatelessWidget {
 
   RaisedButton buttonTeknikSartnameler(context) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -62,7 +65,7 @@ class BayiGirisiPdf extends StatelessWidget {
 
   RaisedButton buttonZiraiKredileme(context) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -75,26 +78,16 @@ class BayiGirisiPdf extends StatelessWidget {
 
   RaisedButton buttonYerliMali(context) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
-        child: Text(
-          "YERLİ MALI BELGESİ",
-        ),
-      ),
-      onPressed: () async {
-        await GetFilesFromAssets(pdfname: kPdfYerliMali)
-            .getFileFromAsset(kPdfAssetYerliMali)
-            .then((f) {
-          assetPDFYerliMali = f.path;
-        });
-        if (assetPDFYerliMali != null) {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => PdfViewPage(path: assetPDFYerliMali)));
-        }
-      },
+        child:   new RichText(
+              text: new LinkTextSpan(
+                  style: TextStyle(color: Colors.red),
+                  url: 'http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',
+                  text:  'YERLİ MALI BELGESİ'),
+              ),
+      ), onPressed: () {},
     );
   }
 
@@ -113,3 +106,5 @@ class BayiGirisiPdf extends StatelessWidget {
     );
   }
 }
+
+
