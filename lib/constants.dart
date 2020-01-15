@@ -23,14 +23,14 @@ const String kButton2TextYunusBalya = '230-231 DENEY RAPORU 09.06.2020';
 const String kButton3TextYunusBalya = '231D DENEY RAPORU';
 
 const String kTextKvkk = 'KİŞİSEL VERİLERİN KORUNMASI';
-const String kButton1TextKvkk = 'PAKSAN KİŞİSEL VERİLERİN İŞLENMESİ VE KORUNMASI POLİTİKASI';
-const String kButton2TextKvkk = 'PAKSAN KVKK TEDARİKÇİ&TAŞERON ÇALIŞANI AYDINLATMA METNİ';
-const String kButton3TextKvkk = 'PAKSAN KVKK TEDARİKÇİ AYDINLATMA METNİ';
-const String kButton4TextKvkk = 'PAKSAN KVKK RIZA METNİ';
-const String kButton5TextKvkk = 'PAKSAN KVKK PERSONEL AYDINLATMA METNİ';
-const String kButton6TextKvkk = 'PAKSAN KVKK MÜŞTERİ AYDINLATMA METNİ';
-const String kButton7TextKvkk = 'PAKSAN KVKK İŞ BAŞVURUSU ADAY PERSONEL AYDINLATMA METNİ';
-const String kButton8TextKvkk = 'PAKSAN KVKK VERİ SAHİBİ BAŞVURU FORMU';
+const String kButton1TextKvkk = 'KİŞİSEL VERİLERİN İŞLENMESİ VE KORUNMASI POLİTİKASI';
+const String kButton2TextKvkk = 'TEDARİKÇİ&TAŞERON ÇALIŞANI AYDINLATMA METNİ';
+const String kButton3TextKvkk = 'TEDARİKÇİ AYDINLATMA METNİ';
+const String kButton4TextKvkk = 'RIZA METNİ';
+const String kButton5TextKvkk = 'PERSONEL AYDINLATMA METNİ';
+const String kButton6TextKvkk = 'MÜŞTERİ AYDINLATMA METNİ';
+const String kButton7TextKvkk = 'İŞ BAŞVURUSU ADAY PERSONEL AYDINLATMA METNİ';
+const String kButton8TextKvkk = 'VERİ SAHİBİ BAŞVURU FORMU';
 
 const String ktextYemKarma = 'DENEY RAPORLARI YEM KARMA MAKİNASI';
 const String kButton1TextYemKarma = '1,5m³ Diamond Yem Karma 17.07.2022';

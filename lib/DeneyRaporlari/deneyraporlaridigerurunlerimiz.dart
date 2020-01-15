@@ -1,12 +1,15 @@
+
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 import 'package:first_app/constants.dart';
 import 'package:first_app/pdfviewPage.dart';
 
+import '../kvkk.dart';
+
 class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -16,61 +19,36 @@ class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                _textDRDU('DENEY RAPORLARI DİĞER ÜRÜNLERİMİZ'),
-                _buttonDRDU(
-                    'ÇEKİÇ 14.03.2023',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetCekic,
-                        pdfAssetNamed: assetPDFCekic,
-                        pdfName: kPdfCekic)),
-                _buttonDRDU(
-                    'KIRLANGIÇ OT TOPLAM TIRMIĞI 02.10.2024',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetKirlangic,
-                        pdfAssetNamed: assetPDFKirlangic,
-                        pdfName: kPdfKirlangic)),
-                _buttonDRDU(
-                    'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetOrkinos870,
-                        pdfAssetNamed: assetPDFOrkinos870,
-                        pdfName: kPdfOrkinos870)),
-                _buttonDRDU(
-                    'ORKİNOS 6127 BÜYÜK BALYA MAKİNASI DENEY RAPORU 14.09.2020',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetOrkinos6127,
-                        pdfAssetNamed: assetPDFOrkinos6127,
-                        pdfName: kPdfOrkinos6127)),
-                _buttonDRDU(
-                    'Yengeç 135 02.10.2024',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetYengec135,
-                        pdfAssetNamed: assetPDFYengec135,
-                        pdfName: kPdfYengec135)),
-                _buttonDRDU(
-                    'Yengeç 165 02.10.2024',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetYengec165,
-                        pdfAssetNamed: assetPDFYengec165,
-                        pdfName: kPdfYengec165)),
-                _buttonDRDU(
-                    'Yengeç 195 02.10.2024',
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetYengec195,
-                        pdfAssetNamed: assetPDFYengec195,
-                        pdfName: kPdfYengec195)),
+              _textDRDU('DENEY RAPORLARI DİĞER ÜRÜNLERİMİZ'),
+              Icon( Icons.audiotrack,color: Colors.green,size: 30.0,), 
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ÇEKİÇ 14.03.2023'),
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU'),
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ORKİNOS 6127 BÜYÜK BALYA MAKİNASI DENEY RAPORU 14.09.2020'),
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 135 02.10.2024'),
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 165 02.10.2024'),
+              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 195 02.10.2024'),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  RaisedButton pdfbutton( String url, String text ) {
+    return RaisedButton(
+      color: Colors.white,
+      child: Align(
+        alignment: Alignment.centerLeft,
+          child:
+           RichText(
+                text: new LinkTextSpan(
+                    style: TextStyle(color: Colors.red),
+                    url: url,
+                    text:  text),
+                ),
+      ), onPressed: () {},
+      
     );
   }
 

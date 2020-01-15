@@ -30,7 +30,7 @@ class DeneyRaporlari extends StatelessWidget {
 
   RaisedButton buttonDeneyRaporlari(String buttonText,Function function) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
