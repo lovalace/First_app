@@ -1,9 +1,6 @@
+import 'package:first_app/utility.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
-import 'constants.dart';
-import 'package:first_app/pdfviewPage.dart';
-
-import 'kvkk.dart';
 
 class BayiGirisiPdf extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -81,12 +78,8 @@ class BayiGirisiPdf extends StatelessWidget {
       color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
-        child:   new RichText(
-              text: new LinkTextSpan(
-                  style: TextStyle(color: Colors.red),
-                  url: 'http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',
-                  text:  'YERLİ MALI BELGESİ'),
-              ),
+        child:  
+         pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  'YERLİ MALI BELGESİ'),
       ), onPressed: () {},
     );
   }
@@ -94,7 +87,7 @@ class BayiGirisiPdf extends StatelessWidget {
   Container textKorumaliBayiGirisi() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         'Korumalı: BAYİ GİRİŞİ',
         textAlign: TextAlign.center,
