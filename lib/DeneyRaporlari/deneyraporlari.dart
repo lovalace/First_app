@@ -5,7 +5,7 @@ import 'package:first_app/constants.dart';
 class DeneyRaporlari extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -45,7 +45,7 @@ class DeneyRaporlari extends StatelessWidget {
   Container _textDeneyRaporlari(String text) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         text,
         textAlign: TextAlign.center,

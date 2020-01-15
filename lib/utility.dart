@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 //import 'package:first_app/main.dart';
 
 //global olmalı
@@ -42,6 +44,35 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
           }, 
            child: imageAsset(_imageUrl)
           );
+
+     RaisedButton pdfbutton( String url, String text ) {
+    return RaisedButton(
+      color: Colors.white,
+      child: Align(
+        alignment: Alignment.centerLeft,
+          child:
+           RichText(
+                text: new LinkTextSpan(
+                    style: TextStyle(color: Colors.red),
+                    url: url,
+                    text:  text),
+                ),
+      ), onPressed: () {},
+      
+    );
+  }
+
+   class LinkTextSpan extends TextSpan {
+  LinkTextSpan({TextStyle style, String url, String text})
+      : super(
+      style: TextStyle(color: Colors.black,),
+      text: text ?? url,
+      recognizer: new TapGestureRecognizer()
+        ..onTap = () {
+          launch(url);
+        });
+   }
+
 final _textStyle14 = TextStyle(
   fontSize: 14,
   color: Colors.blue[700],);
@@ -53,5 +84,3 @@ final _textstyle26 = TextStyle(
 final _edgeInsets332 = EdgeInsets.fromLTRB(10, 332, 10, 00);
 final _edgeInsets362 = EdgeInsets.fromLTRB(10, 362, 10, 00);
 final _edgeInsetsSymmetric = EdgeInsets.symmetric(horizontal: 0, vertical: 20);
-
-

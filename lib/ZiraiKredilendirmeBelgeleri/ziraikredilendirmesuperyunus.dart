@@ -3,10 +3,12 @@ import 'package:first_app/main.dart';
 import 'package:first_app/pdfviewPage.dart';
 import 'package:first_app/constants.dart';
 
+import '../utility.dart';
+
 class ZiraiKredilendirmeSuperYunus extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -17,27 +19,10 @@ class ZiraiKredilendirmeSuperYunus extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textZKSuperYunus(kTextZKSuperYunus),
-                buttonZKSuperYunus(
-                    kButton1TextZKSuperYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetZKSuperYunus1,
-                        pdfAssetNamed: assetPDFZKSuperYunus1,
-                        pdfName: kPdfZKSuperYunus1)),
-                buttonZKSuperYunus(
-                    kButton2TextZKSuperYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetZKSuperYunus2,
-                        pdfAssetNamed: assetPDFZKSuperYunus2,
-                        pdfName: kPdfZKSuperYunus2)),
-                buttonZKSuperYunus(
-                    kButton3TextZKSuperYunus,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetZKSuperYunus3,
-                        pdfAssetNamed: assetPDFZKSuperYunus3,
-                        pdfName: kPdfZKSuperYunus3)),
+                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextZKSuperYunus),
+                  pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextZKSuperYunus),
+                   pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextZKSuperYunus),
+                
               ],
             ),
           ),
@@ -46,18 +31,7 @@ class ZiraiKredilendirmeSuperYunus extends StatelessWidget {
     );
   }
 
-  RaisedButton buttonZKSuperYunus(String buttonText, Function function) {
-    return RaisedButton(
-      color: Colors.grey,
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: Text(
-          buttonText,
-        ),
-      ),
-      onPressed: function,
-    );
-  }
+
 
   Container _textZKSuperYunus(String text) {
     return Container(
@@ -72,23 +46,5 @@ class ZiraiKredilendirmeSuperYunus extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  _pdfAc(
-      {BuildContext context,
-      String pdfName,
-      String pdfAsset,
-      String pdfAssetNamed}) async {
-    await GetFilesFromAssets(pdfname: pdfName)
-        .getFileFromAsset(pdfAsset)
-        .then((f) {
-      pdfAssetNamed = f.path;
-    });
-    if (pdfAssetNamed != null) {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => PdfViewPage(path: pdfAssetNamed)));
-    }
   }
 }

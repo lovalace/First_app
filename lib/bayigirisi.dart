@@ -7,7 +7,6 @@ class BayiGirisi extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-     // drawer: NewDrawer(),
       endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
@@ -30,7 +29,7 @@ class BayiGirisi extends StatelessWidget {
                     obscureText: true,
                     decoration: InputDecoration(
                         filled: true,
-                        fillColor: Colors.grey,
+                        fillColor: Colors.white10,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(10.0),
@@ -64,7 +63,7 @@ class BayiGirisi extends StatelessWidget {
   Container _textBayiGirisi() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         'BAYİ GİRİŞİ',
         textAlign: TextAlign.center,

@@ -5,7 +5,7 @@ import 'package:first_app/constants.dart';
 class ZiraiKredilendirmeBelgeleri extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -30,7 +30,7 @@ class ZiraiKredilendirmeBelgeleri extends StatelessWidget {
 
   RaisedButton buttonZiraiKredilendirmeBelgeleri(String buttonText,Function function) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -45,7 +45,7 @@ class ZiraiKredilendirmeBelgeleri extends StatelessWidget {
   Container _textZiraiKredilendirmeBelgeleri(String text) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         text,
         textAlign: TextAlign.center,

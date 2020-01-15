@@ -3,10 +3,12 @@ import 'package:first_app/main.dart';
 import 'package:first_app/pdfviewPage.dart';
 import 'package:first_app/constants.dart';
 
+import '../utility.dart';
+
 class ZiraiKredilendirmeSuperS8002 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -17,38 +19,13 @@ class ZiraiKredilendirmeSuperS8002 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textZKSuperS8002(kTextZKSuperS8002),
-                buttonZKSuperS8002(
-                    kButton1TextZKSuperS8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetZKDigerUrunler1,
-                        pdfAssetNamed: assetPDFZKDigerUrunler1,
-                        pdfName: kPdfZKDigerUrunler1)),
-                buttonZKSuperS8002(
-                    kButton2TextZKSuperS8002,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetZKDigerUrunler2,
-                        pdfAssetNamed: assetPDFZKDigerUrunler2,
-                        pdfName: kPdfZKDigerUrunler2)),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextZKSuperS8002),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextZKSuperS8002),
               ],
             ),
           ),
         ),
       ),
-    );
-  }
-
-  RaisedButton buttonZKSuperS8002(String buttonText, Function function) {
-    return RaisedButton(
-      color: Colors.grey,
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: Text(
-          buttonText,
-        ),
-      ),
-      onPressed: function,
     );
   }
 
@@ -67,21 +44,4 @@ class ZiraiKredilendirmeSuperS8002 extends StatelessWidget {
     );
   }
 
-  _pdfAc(
-      {BuildContext context,
-      String pdfName,
-      String pdfAsset,
-      String pdfAssetNamed}) async {
-    await GetFilesFromAssets(pdfname: pdfName)
-        .getFileFromAsset(pdfAsset)
-        .then((f) {
-      pdfAssetNamed = f.path;
-    });
-    if (pdfAssetNamed != null) {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => PdfViewPage(path: pdfAssetNamed)));
-    }
-  }
-}
+ }

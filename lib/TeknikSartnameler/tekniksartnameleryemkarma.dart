@@ -3,10 +3,12 @@ import 'package:first_app/main.dart';
 import 'package:first_app/pdfviewPage.dart';
 import 'package:first_app/constants.dart';
 
+import '../utility.dart';
+
 class TeknikSartnamelerYemKarmaMakinesi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NewDrawer(),
+      endDrawer: NewDrawer(),
       appBar: NewAppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -17,34 +19,12 @@ class TeknikSartnamelerYemKarmaMakinesi extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textTSYemKarma(kTextTSYemKarma),
-                buttonTSYemKarma(
-                    kButton1TextTSYemKarma,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYemKarma1,
-                        pdfAssetNamed: assetPDFTSYemKarma1,
-                        pdfName: kPdfTSYemKarma1)),
-                buttonTSYemKarma(
-                    kButton2TextTSYemKarma,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYemKarma2,
-                        pdfAssetNamed: assetPDFTSYemKarma2,
-                        pdfName: kPdfTSYemKarma2)),
-                buttonTSYemKarma(
-                    kButton3TextTSYemKarma,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYemKarma3,
-                        pdfAssetNamed: assetPDFTSYemKarma3,
-                        pdfName: kPdfTSYemKarma3)),
-                buttonTSYemKarma(
-                    kButton4TextTSYemKarma,
-                    () => _pdfAc(
-                        context: context,
-                        pdfAsset: kPdfAssetTSYemKarma4,
-                        pdfAssetNamed: assetPDFTSYemKarma4,
-                        pdfName: kPdfTSYemKarma4)),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextTSYemKarma),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextTSYemKarma),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextTSYemKarma),
+                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextTSYemKarma),
+
+              
               ],
             ),
           ),
@@ -53,18 +33,6 @@ class TeknikSartnamelerYemKarmaMakinesi extends StatelessWidget {
     );
   }
 
-  RaisedButton buttonTSYemKarma(String buttonText, Function function) {
-    return RaisedButton(
-      color: Colors.grey,
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: Text(
-          buttonText,
-        ),
-      ),
-      onPressed: function,
-    );
-  }
 
   Container _textTSYemKarma(String text) {
     return Container(
@@ -81,21 +49,4 @@ class TeknikSartnamelerYemKarmaMakinesi extends StatelessWidget {
     );
   }
 
-  _pdfAc(
-      {BuildContext context,
-      String pdfName,
-      String pdfAsset,
-      String pdfAssetNamed}) async {
-    await GetFilesFromAssets(pdfname: pdfName)
-        .getFileFromAsset(pdfAsset)
-        .then((f) {
-      pdfAssetNamed = f.path;
-    });
-    if (pdfAssetNamed != null) {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => PdfViewPage(path: pdfAssetNamed)));
-    }
-  }
 }
