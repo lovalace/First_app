@@ -1,4 +1,3 @@
-import 'package:first_app/pdfdownload.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
 
@@ -13,10 +12,6 @@ class AboutUs extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              FlatButton(child: Text("data"), onPressed: () {
-               Navigator.push(context,
-                   new MaterialPageRoute(builder: (context) => new Pdfdownload()));
-              },),
               _stackAboutUs(),
               _container('6 kıtaya ihracat yapan Paksan Türkiye’de ve dünyada yatırımlarına hız kesmeden devam ediyor.', _textStyle32),
               _container('1970 yılında Özhan Pak ve ortakları tarafından kurulmuş olan Paksan Makina bugün Türkiye’nin ve dünyanın en önemli balya makinası üreticileri arasında yer almaktadır. Paksan toplamda 21.000 m2 kapalı toplam 62.000 m2’yi bulan üretim tesislerinde, robotlar, modern CNC tezgahları, son model lazer kesim makinaları ve en gelişmiş çizim programları gibi son teknoloji imkanlarını kullanarak dünya standartlarında makina üretmektedir.', _textStyle14),
