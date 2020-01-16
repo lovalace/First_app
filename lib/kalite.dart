@@ -16,7 +16,7 @@ class Kalite extends StatelessWidget {
             children: <Widget>[
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-                color: Colors.grey[300],
+                color: Colors.white,
                 child: Text(
                   'KALİTE POLİTİKAMIZ',
                   textAlign: TextAlign.center,
@@ -27,7 +27,7 @@ class Kalite extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.asset('images/kalitepol.jpg'),
+                child: Image.network('https://paksan.bandirmawebtasarim.net/images/kalitepol.jpg'),
               ),
             ],
           ),

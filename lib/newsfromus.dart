@@ -22,7 +22,7 @@ class NewsFromUs extends StatelessWidget {
                 _stackBolum2(context),
                 _stackBolum3(context),
                 Container(
-                  child: Image.asset('images/FSon.jpg'),
+                  child: Image.network('https://paksan.bandirmawebtasarim.net/images/FSon.jpg'),
                 ),
               ],
             ),
@@ -52,7 +52,7 @@ class NewsFromUs extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.fromLTRB(00, 02, 00, 00),
-          child: Image.asset('images/konya-fuari.jpg'),
+          child: Image.network('https://paksan.bandirmawebtasarim.net/images/konya-fuari.jpg'),
         ),
         Container(
           padding: EdgeInsets.fromLTRB(00, 300, 00, 00),
@@ -106,7 +106,7 @@ class NewsFromUs extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.fromLTRB(00, 02, 00, 00),
-          child: Image.asset('images/foto1.jpeg'),
+          child: Image.network('https://paksan.bandirmawebtasarim.net/images/foto1.jpeg'),
         ),
         Container(
           padding: EdgeInsets.fromLTRB(00, 300, 00, 00),
@@ -160,7 +160,7 @@ class NewsFromUs extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.fromLTRB(00, 02, 00, 00),
-          child: Image.asset('images/paksansite.png'),
+          child: Image.network('https://paksan.bandirmawebtasarim.net/images/paksansite.png'),
         ),
         Container(
           padding: EdgeInsets.fromLTRB(00, 300, 00, 00),

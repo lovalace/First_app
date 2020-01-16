@@ -65,8 +65,8 @@ class Iletisim extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.fromLTRB(00, 25, 00, 00),
-              child: Image.asset(
-                'images/FSon.jpg',
+              child: Image.network(
+                'https://paksan.bandirmawebtasarim.net/images/FSon.jpg',
               ),
             )
           ],
@@ -271,11 +271,13 @@ class _MyAppState extends State<GMaps> {
     super.initState();
   }
 
-  final LatLng _center = const LatLng(40.2808139, 28.05024);
+  final LatLng _center = const LatLng(40.281226, 28.050359);
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
   }
+
+
 
   @override
   Widget build(BuildContext context) {

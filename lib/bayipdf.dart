@@ -79,7 +79,7 @@ class BayiGirisiPdf extends StatelessWidget {
       child: Align(
         alignment: Alignment.centerLeft,
         child:  
-         pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  'YERLİ MALI BELGESİ'),
+         pdfbutton('paksan.bandirmawebtasarim.net/images/yerlimali.pdf',  'YERLİ MALI BELGESİ'),
       ), onPressed: () {},
     );
   }

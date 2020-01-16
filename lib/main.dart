@@ -187,8 +187,8 @@ class NewAppBarNoBack extends StatelessWidget implements PreferredSizeWidget {
       //         },
           
       //     ),
-        title: Image.asset(
-    'images/PAKSAN.png',
+        title: Image.network(
+    'https://paksan.bandirmawebtasarim.net/images/PAKSAN.png',
     scale: 1.7,
         ),
         centerTitle: true,

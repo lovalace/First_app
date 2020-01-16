@@ -18,9 +18,9 @@ class ZiraiKredilendirmeSuperYunus extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textZKSuperYunus(kTextZKSuperYunus),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextZKSuperYunus),
-                  pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextZKSuperYunus),
-                   pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextZKSuperYunus),
+                 pdfbutton( kPdfAssetZKSuperYunus1,  kButton1TextZKSuperYunus),
+                  pdfbutton( kPdfAssetZKSuperYunus2,  kButton2TextZKSuperYunus),
+                   pdfbutton( kPdfAssetZKSuperYunus3,  kButton3TextZKSuperYunus),
                 
               ],
             ),
