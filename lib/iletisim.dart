@@ -271,7 +271,7 @@ class _MyAppState extends State<GMaps> {
     super.initState();
   }
 
-  final LatLng _center = const LatLng(41.0218326, 28.8219374);
+  final LatLng _center = const LatLng(40.2808139, 28.05024);
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
