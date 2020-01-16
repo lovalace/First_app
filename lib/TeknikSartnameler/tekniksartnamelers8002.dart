@@ -18,14 +18,14 @@ class TeknikSartnamelerSuperS8002 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textTSS8002(kTextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton5TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton6TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton7TextTSS8002),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton8TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_1,  kButton1TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_2,  kButton2TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_3,  kButton3TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_4,  kButton4TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_5,  kButton5TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_6,  kButton6TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_7,  kButton7TextTSS8002),
+                 pdfbutton( kPdfAssetTSS8002_8,  kButton8TextTSS8002),
               ],
             ),
           ),
@@ -36,7 +36,7 @@ class TeknikSartnamelerSuperS8002 extends StatelessWidget {
 
   RaisedButton buttonTSS8002(String buttonText, Function function) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -50,7 +50,7 @@ class TeknikSartnamelerSuperS8002 extends StatelessWidget {
   Container _textTSS8002(String text) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         text,
         textAlign: TextAlign.center,

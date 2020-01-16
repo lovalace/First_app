@@ -15,14 +15,14 @@ class Deneme01 extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton5TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton6TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton7TextKvkk),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton8TextKvkk),
+              pdfbutton(kPdfAssetKvkk1,  kButton1TextKvkk),
+              pdfbutton(kPdfAssetKvkk2,  kButton2TextKvkk),
+              pdfbutton(kPdfAssetKvkk3,  kButton3TextKvkk),
+              pdfbutton(kPdfAssetKvkk4,  kButton4TextKvkk),
+              pdfbutton(kPdfAssetKvkk5,  kButton5TextKvkk),
+              pdfbutton(kPdfAssetKvkk6,  kButton6TextKvkk),
+              pdfbutton(kPdfAssetKvkk7,  kButton7TextKvkk),
+              pdfbutton(kPdfAssetKvkk8,  kButton8TextKvkk),
             ],
           ),
         ),

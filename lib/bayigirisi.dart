@@ -42,7 +42,7 @@ class BayiGirisi extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.fromLTRB(00, 10, 00, 00),
                   child: RaisedButton(
-                    child: Text("GÖNDER"),
+                    child: Text("Gönder"),
                     color: Color.fromARGB(180, 255, 116, 0),
                     textColor: Colors.white,
                     onPressed: () {

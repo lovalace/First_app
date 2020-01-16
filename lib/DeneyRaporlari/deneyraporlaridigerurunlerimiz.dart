@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
+import '../constants.dart';
 import '../utility.dart';
 
 
@@ -19,12 +20,12 @@ class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
               children: <Widget>[
               _textDRDU('DENEY RAPORLARI DİĞER ÜRÜNLERİMİZ'),
               Icon( Icons.audiotrack,color: Colors.green,size: 30.0,), 
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ÇEKİÇ 14.03.2023'),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU'),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'ORKİNOS 6127 BÜYÜK BALYA MAKİNASI DENEY RAPORU 14.09.2020'),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 135 02.10.2024'),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 165 02.10.2024'),
-              pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', 'Yengeç 195 02.10.2024'),
+              pdfbutton( kPdfAssetCekic, 'ÇEKİÇ 14.03.2023'),
+              pdfbutton( kPdfAssetOrkinos870, 'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU'),
+              pdfbutton( kPdfAssetOrkinos6127, 'ORKİNOS 6127 BÜYÜK BALYA MAKİNASI DENEY RAPORU 14.09.2020'),
+              pdfbutton( kPdfAssetYengec135, 'Yengeç 135 02.10.2024'),
+              pdfbutton( kPdfAssetYengec165, 'Yengeç 165 02.10.2024'),
+              pdfbutton( kPdfAssetYengec195, 'Yengeç 195 02.10.2024'),
               ],
             ),
           ),

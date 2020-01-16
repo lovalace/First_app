@@ -17,12 +17,12 @@ class TeknikSartnamelerDigerUrunlerimiz extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textTSDU(kTextTSDU),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextTSDU),
-                  pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextTSDU),
-                   pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextTSDU),
-                    pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextTSDU),
-                     pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton5TextTSDU),
-                     pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton6TextTSDU),
+                 pdfbutton( kPdfAssetTSDU1,  kButton1TextTSDU),
+                  pdfbutton( kPdfAssetTSDU2,  kButton2TextTSDU),
+                   pdfbutton( kPdfAssetTSDU3,  kButton3TextTSDU),
+                    pdfbutton( kPdfAssetTSDU4,  kButton4TextTSDU),
+                     pdfbutton( kPdfAssetTSDU5,  kButton5TextTSDU),
+                     pdfbutton( kPdfAssetTSDU6,  kButton6TextTSDU),
               
               ],
             ),
@@ -34,7 +34,7 @@ class TeknikSartnamelerDigerUrunlerimiz extends StatelessWidget {
 
   RaisedButton buttonDRDU(String buttonText, Function function) {
     return RaisedButton(
-      color: Colors.grey,
+      color: Colors.white,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
@@ -48,7 +48,7 @@ class TeknikSartnamelerDigerUrunlerimiz extends StatelessWidget {
   Container _textTSDU(String text) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         text,
         textAlign: TextAlign.center,

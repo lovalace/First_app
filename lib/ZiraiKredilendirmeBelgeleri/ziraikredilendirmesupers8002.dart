@@ -18,8 +18,8 @@ class ZiraiKredilendirmeSuperS8002 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textZKSuperS8002(kTextZKSuperS8002),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextZKSuperS8002),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextZKSuperS8002),
+                pdfbutton(  kPdfAssetZKSuperS8002_1,  kButton1TextZKSuperS8002),
+                pdfbutton(  kPdfAssetZKSuperS8002_2,  kButton2TextZKSuperS8002),
               ],
             ),
           ),

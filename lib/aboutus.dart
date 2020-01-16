@@ -32,8 +32,7 @@ class AboutUs extends StatelessWidget {
   Container _ctImageSayfaSonu() {
     return Container(
       padding: EdgeInsets.fromLTRB(00, 25, 00, 00),
-      child: Image.asset(
-        'images/FSon.jpg',
+      child: Image.network('https://paksan.bandirmawebtasarim.net/images/FSon.jpg',
       ),
     );
   }
@@ -42,14 +41,14 @@ class AboutUs extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Container(
-          child: Image.asset(
-            'images/tarla.jpg',
+          child: Image.network(
+            'https://paksan.bandirmawebtasarim.net/images/tarla.jpg',
             scale: 1,
           ),
         ),
         Container(
           padding: EdgeInsets.fromLTRB(20, 40, 20, 00),
-          child: Image.asset('images/PAKSAN.png', scale: 0.90,),
+          child: Image.network('https://paksan.bandirmawebtasarim.net/images/PAKSAN.png', scale: 0.90,),
         ),
       ],
     );
