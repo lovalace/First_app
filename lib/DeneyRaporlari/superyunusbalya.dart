@@ -17,9 +17,9 @@ class SuperYunusBalyaMakinesi extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textYunusBalya(ktextYunusBalya),   
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextYunusBalya),
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton2TextYunusBalya), 
-                 pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf', kButton3TextYunusBalya), 
+                 pdfbutton( kPdfAssetYunusBalya1,  kButton1TextYunusBalya),
+                 pdfbutton( kPdfAssetYunusBalya2, kButton2TextYunusBalya), 
+                 pdfbutton( kPdfAssetYunusBalya3, kButton3TextYunusBalya), 
               ],
             ),
           ),
@@ -31,7 +31,7 @@ class SuperYunusBalyaMakinesi extends StatelessWidget {
   Container _textYunusBalya(String text) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-      color: Colors.grey[300],
+      color: Colors.white,
       child: Text(
         text,
         textAlign: TextAlign.center,

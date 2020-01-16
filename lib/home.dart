@@ -58,7 +58,7 @@ class Home extends StatelessWidget {
               ),
               Container(
                 child: Image(
-                  image: AssetImage(kAssetCiftlik),
+                  image: NetworkImage(kAssetCiftlik),
                 ),
               ),
               Container(
@@ -92,8 +92,8 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.asset(
-                  'images/Makina1.png',
+                child: Image.network(
+                  'https://paksan.bandirmawebtasarim.net/images/Makina1.png',
                 ),
               ),
               Container(
@@ -137,8 +137,8 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.asset(
-                  'images/Ciftlik2.png',
+                child: Image.network(
+                  'https://paksan.bandirmawebtasarim.net/images/Ciftlik2.png',
                 ),
               ),
               Container(
@@ -192,8 +192,8 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.asset(
-                  'images/Makina2.png',
+                child: Image.network(
+                  'https://paksan.bandirmawebtasarim.net/images/Makina2.png',
                 ),
               ),
               Container(
@@ -406,13 +406,13 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.asset(
-                  'images/Paksan6Kita.gif',
+                child: Image.network(
+                  'https://paksan.bandirmawebtasarim.net/images/Paksan6Kita.gif',
                 ),
               ),
               Container(
-                child: Image.asset(
-                  'images/FSon.jpg',
+                child: Image.network(
+                  'https://paksan.bandirmawebtasarim.net/images/FSon.jpg',
                 ),
               ),
             ],
@@ -437,31 +437,31 @@ class Home extends StatelessWidget {
           animationDuration: Duration(seconds: 3),
           images: [
             GestureDetector(
-              child: Image.asset('images/Orkinos.jpg'),
+              child: Image.network('https://paksan.bandirmawebtasarim.net/images/Orkinos.jpg'),
               onTap: () {
                 Navigator.pushNamed(context, "/products");
               },
             ),
             GestureDetector(
-              child: Image.asset('images/ScorpionX.jpg'),
+              child: Image.network('https://paksan.bandirmawebtasarim.net/images/ScorpionX.jpg'),
               onTap: () {
                 Navigator.pushNamed(context, "/products");
               },
             ),
             GestureDetector(
-              child: Image.asset('images/Yabali.jpg'),
+              child: Image.network('https://paksan.bandirmawebtasarim.net/images/Yabali.jpg'),
               onTap: () {
                 Navigator.pushNamed(context, "/products");
               },
             ),
             GestureDetector(
-              child: Image.asset('images/PelicanYatay8m3.png'),
+              child: Image.network('https://paksan.bandirmawebtasarim.net/images/PelicanYatay8m3.png'),
               onTap: () {
                 Navigator.pushNamed(context, "/products");
               },
             ),
             GestureDetector(
-              child: Image.asset('images/Diamond31.png'),
+              child: Image.network('https://paksan.bandirmawebtasarim.net/images/Diamond31.png'),
               onTap: () {
                 Navigator.pushNamed(context, "/products");
               },
@@ -497,7 +497,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage5(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'images/samanbalya.gif',
+      imageName: 'https://paksan.bandirmawebtasarim.net/images/samanbalya.gif',
       text1: "Balyada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 30, 10, 20),
@@ -520,7 +520,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage4(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'images/silaj.gif',
+      imageName: 'https://paksan.bandirmawebtasarim.net/images/silaj.gif',
       text1: "Silajda",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
@@ -543,7 +543,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage3(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'images/yemkarmasol.gif',
+      imageName: 'https://paksan.bandirmawebtasarim.net/images/yemkarmasol.gif',
       text1: "Yem Karmada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
@@ -566,7 +566,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage2(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'images/traktor.jpg',
+      imageName: 'https://paksan.bandirmawebtasarim.net/images/traktor.jpg',
       text1: "Balyada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 45, 10, 20),
@@ -589,7 +589,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage1(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'images/paksan1.gif',
+      imageName: 'https://paksan.bandirmawebtasarim.net/images/paksan1.gif',
       text1: "Paksan Makina",
       textStyle1: _textStyleBigNBold(),
       geometryText1: EdgeInsets.fromLTRB(70, 30, 10, 20),
@@ -631,7 +631,7 @@ class Home extends StatelessWidget {
       children: <Widget>[
         Container(
           height: 270,
-          child: Image.asset(imageName, fit: BoxFit.fill),
+          child: Image.network(imageName, fit: BoxFit.fill),
         ),
         Container(
           padding: geometryText1,

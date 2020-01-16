@@ -18,10 +18,10 @@ class TeknikSartnamelerYemKarmaMakinesi extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textTSYemKarma(kTextTSYemKarma),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextTSYemKarma),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextTSYemKarma),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextTSYemKarma),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton4TextTSYemKarma),
+                pdfbutton( kPdfAssetTSYemKarma1,  kButton1TextTSYemKarma),
+                pdfbutton( kPdfAssetTSYemKarma2,  kButton2TextTSYemKarma),
+                pdfbutton( kPdfAssetTSYemKarma3,  kButton3TextTSYemKarma),
+                pdfbutton( kPdfAssetTSYemKarma4,  kButton4TextTSYemKarma),
 
               
               ],

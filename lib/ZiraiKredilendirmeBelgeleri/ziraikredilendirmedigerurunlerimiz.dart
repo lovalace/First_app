@@ -18,9 +18,9 @@ class ZiraiKredilendirmeDigerUrunlerimiz extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 _textZKDU(kTextZKDU),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton1TextZKDU),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton2TextZKDU),
-                pdfbutton('http://www.paksanmakina.com.tr/wp-content/uploads/2019/09/YERL%C4%B0-MALI-BELGES%C4%B0.pdf',  kButton3TextZKDU),
+                pdfbutton( kPdfAssetZKDigerUrunler1,  kButton1TextZKDU),
+                pdfbutton( kPdfAssetZKDigerUrunler2,  kButton2TextZKDU),
+                pdfbutton( kPdfAssetZKDigerUrunler3,  kButton3TextZKDU),
               ],
             ),
           ),
