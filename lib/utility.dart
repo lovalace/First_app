@@ -42,7 +42,8 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
          //   Orkinos870(),
          //   ));
           }, 
-           child: imageAsset(_imageUrl)
+           child: imageNetwork(_imageUrl)
+           
           );
 
     RaisedButton pdfbutton( String url, String text ) {
