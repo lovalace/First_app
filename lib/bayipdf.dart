@@ -73,14 +73,18 @@ class BayiGirisiPdf extends StatelessWidget {
     );
   }
 
-  RaisedButton buttonYerliMali(context) {
-    return RaisedButton(
-      color: Colors.white,
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child:  
-         pdfbutton('paksan.bandirmawebtasarim.net/images/yerlimali.pdf',  'YERLİ MALI BELGESİ'),
-      ), onPressed: () {},
+  Column buttonYerliMali(context) {
+    return Column(children: <Widget>[
+       RaisedButton(
+        color: Colors.white,
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child:  
+           pdfbutton('https://paksan.bandirmawebtasarim.net/images/yerlimali.pdf',  'YERLİ MALI BELGESİ'),
+        ), onPressed: () {},
+      ),
+    ],
+        
     );
   }
 
