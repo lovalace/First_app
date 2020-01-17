@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/main.dart';
+import 'package:font_awesome_flutter/icon_data.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -23,6 +25,8 @@ class Iletisim extends StatelessWidget {
                 Expanded(child: IconLinkedin()),
                 Expanded(child: IconYoutube()),
                 Expanded(child: IconInstagram()),
+                Expanded(child: IconGoogleMaps()),
+               
                 Expanded(
                   child: SizedBox(),
                   flex: 5,
@@ -225,6 +229,25 @@ class IconInstagram extends StatelessWidget {
         iconSize: 35,
       ),
       alignment: Alignment.centerLeft,
+    );
+  }
+}
+
+
+//IconGoogleMaps
+class IconGoogleMaps extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: IconButton(
+        icon: new Icon(FontAwesomeIcons.map,),
+        onPressed: () {
+          LaunchUrl(url: kUrlGoogleMaps).launchURL();
+        },
+        color: Colors.black87,
+        iconSize: 35,
+      ),
+      alignment: Alignment.center,
     );
   }
 }

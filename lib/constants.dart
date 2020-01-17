@@ -4,6 +4,7 @@ const String kUrlFacebook = 'https://www.facebook.com/paksanmak/';
 const String kUrlYoutube =
     'https://www.youtube.com/channel/UCX-RQBs37hXd-enTaXEKE1A';
 const String kUrlInstagram = 'https://www.instagram.com/paksan_makina_/';
+const String kUrlGoogleMaps = 'https://goo.gl/maps/BPuHrx1NbDGoR8CcA';
 const String kBayiSifre = '1970';
 const String kUrlLink1= 'http://www.paksanmakina.com.tr/19-23-mart-2019-konya-fuarinda-misafirimiz-olun/';
 const String kUrlLink2= 'http://www.paksanmakina.com.tr/paksan-2019-izmir-fuardaydi/';

@@ -95,6 +95,9 @@ class Home extends StatelessWidget {
                 child: Image.network(
                   'https://paksan.bandirmawebtasarim.net/images/Makina1.png',
                 ),
+               
+
+
               ),
               Container(
                 child: Text(
@@ -497,7 +500,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage5(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'https://paksan.bandirmawebtasarim.net/images/samanbalya.gif',
+      imageName: 'images/samanbalya.gif',
       text1: "Balyada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 30, 10, 20),
@@ -520,7 +523,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage4(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'https://paksan.bandirmawebtasarim.net/images/silaj.gif',
+      imageName: 'images/silaj.gif',
       text1: "Silajda",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
@@ -543,7 +546,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage3(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'https://paksan.bandirmawebtasarim.net/images/yemkarmasol.gif',
+      imageName: 'images/yemkarmasol.gif',
       text1: "Yem Karmada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 15, 10, 20),
@@ -566,7 +569,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage2(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'https://paksan.bandirmawebtasarim.net/images/traktor.jpg',
+      imageName: 'images/traktor.jpg',
       text1: "Balyada",
       textStyle1: _textStyleSmall(),
       geometryText1: EdgeInsets.fromLTRB(10, 45, 10, 20),
@@ -589,7 +592,7 @@ class Home extends StatelessWidget {
   Stack _stackHomePage1(BuildContext context) {
     return _stackHomePage(
       context: context,
-      imageName: 'https://paksan.bandirmawebtasarim.net/images/paksan1.gif',
+      imageName: 'images/paksan1.gif',
       text1: "Paksan Makina",
       textStyle1: _textStyleBigNBold(),
       geometryText1: EdgeInsets.fromLTRB(70, 30, 10, 20),
@@ -631,7 +634,13 @@ class Home extends StatelessWidget {
       children: <Widget>[
         Container(
           height: 270,
-          child: Image.network(imageName, fit: BoxFit.fill),
+          child: Image.asset(imageName, fit: BoxFit.fill),
+          // FadeInImage.assetNetwork(
+          //   placeholder: 'images/loading.gif',
+          //   image: imageName,
+          //),
+
+
         ),
         Container(
           padding: geometryText1,

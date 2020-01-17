@@ -81,7 +81,7 @@ Widget _scaffold( BuildContext context, ProductsList _products, int _itemindex )
     }
 
 
-    list.add(SizedBox(height: 100,));
+    list.add(SizedBox(height: 200,));
     //Image.network("http://www.paksanmakina.com.tr/wp-content/uploads/2019/01/FSon.jpg");
     list.add(utility.imageNetwork('https://paksan.bandirmawebtasarim.net/images/FSon.jpg'));
 

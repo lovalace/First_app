@@ -42,30 +42,45 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
          //   Orkinos870(),
          //   ));
           }, 
-           child: imageAsset(_imageUrl)
+           child: imageNetwork(_imageUrl)
+           
           );
 
-    RaisedButton pdfbutton( String url, String text ) {
-    return RaisedButton(
-      color: Colors.white,
-      child: Align(
-        alignment: Alignment.centerLeft,
-          child:
-           RichText(
-                text: new LinkTextSpan(
-                    style: TextStyle(color: Colors.red),
-                    url: url,
-                    text:  text),
-                ),
-      ), onPressed: () {},
-      
+    Column pdfbutton( String url, String text ) {
+    return Column(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+        FittedBox(child: IconButton(
+             icon:  Image.asset('images/acrobat.png'),
+             color: Colors.white, 
+             tooltip: text,
+             onPressed: () {
+                // launch(url);
+             },)),
+          
+         Flexible( fit: FlexFit.tight,
+           child: RaisedButton(             
+                color: Colors.white,
+                child: RichText( text: new LinkTextSpan(
+               style: null,
+               url: url,
+               text:  text),
+               ), 
+                 onPressed: () {
+                 },       
+        ),
+        ),  
+        ],)
+      ],
     );
   }
 
    class LinkTextSpan extends TextSpan {
   LinkTextSpan({TextStyle style, String url, String text})
       : super(
-      style: TextStyle(color: Colors.black,),
+      style: TextStyle(color: Colors.black, fontSize: 10),
       text: text ?? url,
       recognizer: new TapGestureRecognizer()
         ..onTap = () {

@@ -10,12 +10,12 @@ final String allProducts = '''
       "categoryName": "Büyük Balya Makinaları",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/Orkinos1270.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Orkinos1270.jpg",
           "ProductName": "Orkinos 1270",
           "url": "/Orkinos1270"
         },
         {
-          "imageUrl": "images/SubProduct/Orkinos870X-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Orkinos870X-1.jpg",
           "ProductName": "Orkinos 870",
           "url": "/Orkinos870"
         }
@@ -24,57 +24,57 @@ final String allProducts = '''
     {
       "headerText": "Küçük Balya Makinaları",
       "url": "/kucukbalya",
-      "imageUrl": "images/Orkinos.jpg",
+      "imageUrl": "https://paksan.bandirmawebtasarim.net/images/Orkinos.jpg",
       "ProductName": null,
       "categoryName": "Küçük Balya Makinaları",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/SuperS8002X-4.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/SuperS8002X-4.jpg",
           "ProductName": "Super S8002",
           "url": "/SuperS8002"
         },
         {
-          "imageUrl": "images/SubProduct/Super8002EX-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Super8002EX-1.jpg",
           "ProductName": "Super S8002E",
           "url": "/SuperS8002E"
         },
         {
-          "imageUrl": "images/SubProduct/Super-8002E-DualX-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Super-8002E-DualX-1.jpg",
           "ProductName": "Super S8002E Dual 1",
           "url": "/SuperS8002EDual1"
         },
         {
-          "imageUrl": "images/SubProduct/Super-8002E-DualX-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Super-8002E-DualX-1.jpg",
           "ProductName": "Super S8002E Dual 2",
           "url": "/SuperS8002EDual2"
         },
         {
-          "imageUrl": "images/SubProduct/SuperYunusX.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/SuperYunusX.jpg",
           "ProductName": "Super Yunus",
           "url": "/SuperYunus"
         },
         {
-          "imageUrl": "images/SubProduct/Yabali.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Yabali.jpg",
           "ProductName": "Super Yunus 3 Yabalı",
           "url": "/SuperYunus3Yabali"
         },
         {
-          "imageUrl": "images/SubProduct/Yunus8002DualX-4.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Yunus8002DualX-4.jpg",
           "ProductName": "Super Yunus Dual 1",
           "url": "/SuperYunusDual1"
         },
         {
-          "imageUrl": "images/SubProduct/YUNUSDUAL2X.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/YUNUSDUAL2X.jpg",
           "ProductName": "Super Yunus Dual 2",
           "url": "/SuperYunusDual2"
         },
                 {
-          "imageUrl": "images/SubProduct/HammerX.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/HammerX.jpg",
           "ProductName": "Hammer",
           "url": "/Hammer"
         },
                 {
-          "imageUrl": "images/SubProduct/piranha.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/piranha.jpg",
           "ProductName": "Piranha",
           "url": "/Piranha"
         }
@@ -83,22 +83,22 @@ final String allProducts = '''
     {
       "headerText": "Yatay Yem Karma Makinaları",
       "url": "/yatayyemkarma",
-      "imageUrl": "images/Orkinos.jpg",
+      "imageUrl": "https://paksan.bandirmawebtasarim.net/images/Orkinos.jpg",
       "ProductName": null,
       "categoryName": "Yatay Yem Karma",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/8.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/8.jpg",
           "ProductName": "Pelican 8M3",
           "url": "/Pelican8M3"
         },
         {
-          "imageUrl": "images/SubProduct/6-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/6-1.jpg",
           "ProductName": "Pelican 6M3",
           "url": "/Pelican6M3"
         },
         {
-          "imageUrl": "images/SubProduct/4.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/4.jpg",
           "ProductName": "Pelican 4M3",
           "url": "/Pelican4M3"
         }
@@ -107,22 +107,22 @@ final String allProducts = '''
     {
       "headerText": "Dikey Yem Karma Makinaları",
       "url": "/dikeyyemkarma",
-      "imageUrl": "images/Orkinos.jpg",
+      "imageUrl": "https://paksan.bandirmawebtasarim.net/images/Orkinos.jpg",
       "ProductName": null,
       "categoryName": "Dikey Yem Karma",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/Diamond3X-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Diamond3X-1.jpg",
           "ProductName": "Diamond 3m3",
           "url": "/Diamond3m3"
         },
         {
-          "imageUrl": "images/SubProduct/DiamondX-5.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/DiamondX-5.jpg",
           "ProductName": "Diamond 2m3",
           "url": "/Diamond2m3"
         },
         {
-          "imageUrl": "images/SubProduct/Diamond15m-3.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/Diamond15m-3.jpg",
           "ProductName": "Diamond 1.5m3",
           "url": "/Diamond15m3"
         }
@@ -136,12 +136,12 @@ final String allProducts = '''
       "categoryName": "Silaj Ekipmanları",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/ScorpionX.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/ScorpionX.jpg",
           "ProductName": "Scorpion",
           "url": "/Scorpion"
         },
         {
-          "imageUrl": "images/SubProduct/AhtopotX-1.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/AhtopotX-1.jpg",
           "ProductName": "Ahtapot",
           "url": "/Ahtapot"
         }
@@ -150,12 +150,12 @@ final String allProducts = '''
     {
       "headerText": "Çayır Biçme",
       "url": "/cayirbicme",
-      "imageUrl": "images/SubProduct/yengec.jpg",
+      "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/yengec.jpg",
       "ProductName": null,
       "categoryName": "Çayır Biçme  Makinaları",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/yengec.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images//SubProduct/yengec.jpg",
           "ProductName": "Yengeç Çayır Biçme",
           "url": "/Yengec"
         }
@@ -164,12 +164,12 @@ final String allProducts = '''
     {
       "headerText": "Ot Toplama",
       "url": "/ottoplama",
-      "imageUrl": "images/SubProduct/KirlangicKapak.jpg",
+      "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/KirlangicKapak.jpg",
       "ProductName": null,
       "categoryName": "Ot Toplama Makinaları",
       "subProduct": [
         {
-          "imageUrl": "images/SubProduct/KirlangicKapak.jpg",
+          "imageUrl": "https://paksan.bandirmawebtasarim.net/images/SubProduct/KirlangicKapak.jpg",
           "ProductName": "Kırlangıç Ot Toplama",
           "url": "/Kirlangic"
         }
