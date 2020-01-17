@@ -353,7 +353,7 @@ class Orkinos1270 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageNetwork("paksan.bandirmawebtasarim.net/images/Orkinos1270.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/images/Orkinos1270.png"),
                 FittedBox(
                                   child: DataTable(
                     columnSpacing: 0,
@@ -445,7 +445,7 @@ class SuperS8002 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageNetwork("paksan.bandirmawebtasarim.net/images/Orkinos1270.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/images/Orkinos1270.png"),
                 FittedBox(
                                   child: DataTable(
                     columnSpacing: 0,
@@ -543,7 +543,7 @@ class SuperS8002E extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageNetwork("paksan.bandirmawebtasarim.net/images/S8002E.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/images/S8002E.png"),
                 FittedBox(
                                   child: DataTable(
                     columnSpacing: 0,
@@ -1982,7 +1982,7 @@ class Kirlangic extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageNetwork("https://paksan.bandirmawebtasarim.net/Orkinos1270.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/images/Orkinos1270.png"),
                 FittedBox(
                     child: DataTable(
                     columnSpacing: 0,
