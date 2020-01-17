@@ -1965,12 +1965,10 @@ class Kirlangic extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                productDetailsIamages(
-                    'images/Orkinos.jpg',
-                    'images/ScorpionX.jpg',
-                    'images/Yabali.jpg',
-                    'images/PelicanYatay8m3.png',
-                    'images/Diamond31.png'),
+                productDetailsIamages3lu(
+                    'images/Yengec/k1.jpg',
+                    'images/Yengec/k2.jpg',
+                    'images/Yengec/k3.jpg'),
                 SizedBox(
                   height: 10,
                 ),
@@ -2212,6 +2210,7 @@ SizedBox productDetailsIamages2li(String imageUrl1, String imageUrl2) {
         ],
       ));
 }
+
 
 SizedBox productDetailsIamages4lu(
     String imageUrl1, String imageUrl2, String imageUrl3, String imageUrl4) {

@@ -19,15 +19,21 @@ class Iletisim extends StatelessWidget {
             Container(child: GMaps(), height: 200),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                IconButton(
              icon:  Image.asset('images/maps.jpg'),
              color: Colors.white, 
-             tooltip: "Yol Tarifi al",
              onPressed: () {
                  LaunchUrl(url: kUrlGoogleMaps).launchURL();
              },),
+             RaisedButton(onPressed: () { 
+                LaunchUrl(url: kUrlGoogleMaps).launchURL();
+              },
+             child: Text("Haritada Göster", style: TextStyle(color: Colors.white),),
+             color: Colors.blue,
+             )
+            
             ],),
             TextBiziTakipEdin(),
             Row(
