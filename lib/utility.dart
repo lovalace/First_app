@@ -52,10 +52,13 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-        FittedBox(child: RaisedButton.icon(
-             icon: Icon(Icons.picture_as_pdf), label:Text(""), 
+        FittedBox(child: IconButton(
+             icon:  Image.asset('images/acrobat.png'),
              color: Colors.white, 
-             onPressed: () {},)),
+             tooltip: text,
+             onPressed: () {
+                // launch(url);
+             },)),
           
          Flexible( fit: FlexFit.tight,
            child: RaisedButton(             
