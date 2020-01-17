@@ -58,7 +58,7 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
              onPressed: () {},)),
           
          Flexible( fit: FlexFit.tight,
-           child: RaisedButton(
+           child: RaisedButton(             
                 color: Colors.white,
                 child: RichText( text: new LinkTextSpan(
                style: null,

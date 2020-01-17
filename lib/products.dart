@@ -1982,7 +1982,7 @@ class Kirlangic extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageAsset("images/Orkinos1270.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/Orkinos1270.png"),
                 FittedBox(
                     child: DataTable(
                     columnSpacing: 0,
