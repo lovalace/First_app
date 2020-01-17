@@ -265,7 +265,7 @@ class Orkinos870 extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                imageNetwork("paksan.bandirmawebtasarim.net/images/Orkinos870.png"),
+                imageNetwork("https://paksan.bandirmawebtasarim.net/images/Orkinos870.png"),
                 FittedBox(
                                   child: DataTable(
                     columnSpacing: 0,
