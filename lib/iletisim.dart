@@ -17,6 +17,18 @@ class Iletisim extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(child: GMaps(), height: 200),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+               IconButton(
+             icon:  Image.asset('images/maps.jpg'),
+             color: Colors.white, 
+             tooltip: "Yol Tarifi al",
+             onPressed: () {
+                 LaunchUrl(url: kUrlGoogleMaps).launchURL();
+             },),
+            ],),
             TextBiziTakipEdin(),
             Row(
               children: <Widget>[
@@ -24,7 +36,7 @@ class Iletisim extends StatelessWidget {
                 Expanded(child: IconLinkedin()),
                 Expanded(child: IconYoutube()),
                 Expanded(child: IconInstagram()),
-                Expanded(child: IconGoogleMaps()),
+               
                
                 Expanded(
                   child: SizedBox(),
@@ -66,6 +78,7 @@ class Iletisim extends StatelessWidget {
                 Expanded(child: Text('paksan@paksanmakina.com.tr'), flex: 4),
               ],
             ),
+       
             Container(
               padding: EdgeInsets.fromLTRB(00, 25, 00, 00),
               child: Image.network(
@@ -83,11 +96,11 @@ class TextBiziTakipEdin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(10, 30, 10, 00),
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 00),
       child: Text(
         'Bizi Takip Edin',
         style: TextStyle(
-          fontSize: 26,
+          fontSize: 23,
           wordSpacing: 0.5,
           letterSpacing: 1,
           height: 1.2,
@@ -107,7 +120,7 @@ class TextBizeUlasin extends StatelessWidget {
       child: Text(
         'Bize Ulaşın',
         style: TextStyle(
-          fontSize: 26,
+          fontSize: 23,
           wordSpacing: 0.5,
           letterSpacing: 1,
           height: 1.2,
