@@ -19,7 +19,6 @@ class DeneyRaporlariDigerUrunlerimiz extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
               _textDRDU('DENEY RAPORLARI DİĞER ÜRÜNLERİMİZ'),
-              Icon( Icons.audiotrack,color: Colors.green,size: 30.0,), 
               pdfbutton( kPdfAssetCekic, 'ÇEKİÇ 14.03.2023'),
               pdfbutton( kPdfAssetOrkinos870, 'ORKİNOS 870 BÜYÜK BALYA MAKİNASI DENEY RAPORU'),
               pdfbutton( kPdfAssetOrkinos6127, 'ORKİNOS 6127 BÜYÜK BALYA MAKİNASI DENEY RAPORU 14.09.2020'),
