@@ -1,13 +1,14 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 //import 'package:first_app/main.dart';
 
 //global olmalı
 Widget urunlerWidget(BuildContext context,String _url , String _imageUrl, String _productName ,String _catagoryName )=> Stack(children: <Widget>[
       _mainContainer(context, _url,_imageUrl),
-      _container(_productName, _textStyle14, _edgeInsets332),
-      _container(_catagoryName, _textStyle14, _edgeInsets362)
+      _container(_productName,_url,context, _textStyle14, _edgeInsets332),
+      _container(_catagoryName,_url,context, _textStyle14, _edgeInsets362)
 ],);
 
 
@@ -25,10 +26,13 @@ Widget _mainContainer( BuildContext context, String _url , String _imageUrl) => 
       ),
      ]
 );
-Widget _container(String text, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
+Widget _container(String text,_url,BuildContext context, TextStyle _textStyle, EdgeInsets _edgeInsets) =>
     Container(
       padding: _edgeInsets,
-      child: Text(text, style: _textStyle),
+      child: FlatButton(onPressed: () { 
+        Navigator.pushNamed(context, _url);
+       },
+      child: Text(text, style: _textStyle)),
       alignment: Alignment.center,
     );
 
@@ -37,10 +41,6 @@ Widget imageNetwork( String url ) => Image.network(url);
 Widget _flatButton( BuildContext context, String _url , String _imageUrl) => FlatButton(
           onPressed: () {
             Navigator.pushNamed(context, _url);
-         // String itemUrl = "/productdetails";
-         //   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>
-         //   Orkinos870(),
-         //   ));
           }, 
            child: imageNetwork(_imageUrl)
            
@@ -58,6 +58,8 @@ Widget _flatButton( BuildContext context, String _url , String _imageUrl) => Fla
              tooltip: text,
              onPressed: () {
                 // launch(url);
+                launch(url);
+                 //LaunchUrl(url: url).launchURL();
              },)),
           
          Flexible( fit: FlexFit.tight,

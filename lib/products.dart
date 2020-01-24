@@ -50,11 +50,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'BÜYÜK BALYA MAKİNALARI',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/buyukbalya");  },
+                      child: Text(
+              'BÜYÜK BALYA MAKİNALARI',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -77,11 +80,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'OT TOPLAMA',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/ottoplama"); },
+                      child: Text(
+              'OT TOPLAMA',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -105,11 +111,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'SİLAJ EKİPMANLARI',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/silaj"); },
+                      child: Text(
+              'SİLAJ EKİPMANLARI',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -133,11 +142,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'ÇAYIR BİÇME',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/cayirbicme"); },
+                      child: Text(
+              'ÇAYIR BİÇME',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -161,11 +173,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'YATAY YEM KARMA',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/yatayyemkarma"); },
+                      child: Text(
+              'YATAY YEM KARMA',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -189,11 +204,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'DİKEY YEM KARMA',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/dikeyyemkarma"); },
+                      child: Text(
+              'DİKEY YEM KARMA',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
@@ -217,11 +235,14 @@ class Products extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.fromLTRB(10, 332, 10, 00),
-          child: Text(
-            'KÜÇÜK BALYA MAKİNALARI',
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.blue[900],
+          child: FlatButton(
+                      onPressed: () { Navigator.pushNamed(context, "/kucukbalya"); },
+                      child: Text(
+              'KÜÇÜK BALYA MAKİNALARI',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue[900],
+              ),
             ),
           ),
           alignment: Alignment.center,
