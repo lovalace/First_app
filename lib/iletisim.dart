@@ -69,13 +69,13 @@ class Iletisim extends StatelessWidget {
             Row(
               children: <Widget>[
                 Expanded(child: IconPhone()),
-                Expanded(child: Text('+90 266 733 90 90'), flex: 4),
+                Expanded(child:  Text('+90 266 733 90 90'), flex: 4),
               ],
             ),
             Row(
               children: <Widget>[
                 Expanded(child: IconFax()),
-                Expanded(child: Text('90 266 733 90 99'), flex: 4),
+                Expanded(child: Text('+90 266 733 90 99'), flex: 4),
               ],
             ),
             Row(
@@ -176,7 +176,9 @@ class IconFax extends StatelessWidget {
         icon: new Icon(
           FontAwesomeIcons.fax,
         ),
-        onPressed: () {},
+        onPressed: () {
+          launch("tel://+902667339099");
+        },
         color: Colors.blue[800],
         iconSize: 35,
       ),
@@ -191,7 +193,26 @@ class IconPhone extends StatelessWidget {
     return Container(
       child: IconButton(
         icon: new Icon(FontAwesomeIcons.phoneAlt),
-        onPressed: () {},
+        onPressed: () {
+          launch("tel://4449725");
+        },
+        color: Colors.blue[800],
+        iconSize: 35,
+      ),
+      alignment: Alignment.centerLeft,
+    );
+  }
+}
+
+class IconPhoneDesk extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: IconButton(
+        icon: new Icon(FontAwesomeIcons.phoneAlt),
+        onPressed: () {
+          launch("tel://+902667339090");
+        },
         color: Colors.blue[800],
         iconSize: 35,
       ),
